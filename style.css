@@ -79,7 +79,7 @@ a:hover {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /*overflow: hidden;*/
     z-index: -1;
 }
 
@@ -96,7 +96,7 @@ a:hover {
 
 .main {
     background-color: #FFFEFE;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .main__socialbar {
@@ -499,11 +499,76 @@ a:hover {
 
 /* CIRCLE BANNER VERSION */
 
+.banner-container {
+    position: relative;
+    margin: 50px auto;
+    text-align: center;
+}
+
 .shape-container {
     position: relative;
-    text-align: center;
     overflow: hidden;
-    bottom: 200px;
+}
+
+.rectangular-bg {
+    position: relative;
+    width: 100%;
+    height: 284px;
+    background-color: #EC8D32;
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-bottom {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: #EC8D32;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: /*create outlines*/
+            -2px -2px 0 #F7F3EE, /* Top-left */
+            2px -2px 0 #F7F3EE, /* Top-right */
+            -2px  2px 0 #F7F3EE, /* Bottom-left */
+            2px  2px 0 #F7F3EE; /* Bottom-right */
+}
+
+.contact-top {
+    position: absolute;
+    transform: translate(-50%, -40%);
+    z-index: 2;
+}
+
+.mail-button {
+    position: absolute;
+    transform: translate(-50%, 180%);
+    z-index: 3;
+}
+
+.mail-button button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #181716;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mail-button span {
+    font-family: "Josefin Slab", sans-serif;
+    font-weight: 700;
+    color: #F7F3EE;
+}
+
+.mail-button button:hover {
+    text-decoration: underline;
 }
 
 .circle {
@@ -537,26 +602,6 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) translate(40px, 20px);
-}
-
-.sub-heading {
-    font-family: 'Lexend Exa', sans-serif;
-    font-size: 120px;
-    font-weight: 900;
-    color: #EC8D32;
-    position: relative;
-    z-index: 1;
-    text-shadow: /*create outlines*/
-            -2px -2px 0 #F7F3EE, /* Top-left */
-            2px -2px 0 #F7F3EE, /* Top-right */
-            -2px  2px 0 #F7F3EE, /* Bottom-left */
-            2px  2px 0 #F7F3EE; /* Bottom-right */
-}
-
-.h1-overlay {
-    position: relative;
-    top: -50px;
-    z-index: 2;
 }
 
 .circle-4 {
@@ -605,50 +650,16 @@ a:hover {
     transform: translate(-50%, -50%) translateX(-700px);
 }
 
-.rectangular-bg {
-    position: absolute;
-    width: 100%;
-    height: 284px;
-    background-color: #EC8D32;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.mail-button button {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 36px;
-    font-weight: normal;
-    color: #181716;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-.mail-button span {
-    font-family: "Josefin Slab", sans-serif;
-    font-weight: 700;
-    color: #F7F3EE;
-}
-
-.mail-button button:hover {
-    text-decoration: underline;
-}
-
 /*======================================*/
 
 /* Instagram gallery */
 
-/*.gallery-container {
-    flex: 1;
-}*/
+.gallery-container {
+    margin-bottom: 10px;
+}
 
 .gallery-item {
     position: relative;
-    transform: translate(0, -33%)
 }
 
 .gallery-icon {
