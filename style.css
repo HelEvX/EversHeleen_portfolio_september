@@ -68,9 +68,9 @@ a:hover {
 
 .main {
     background-color: #FFFEFE;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /*margin: 0 auto;*/
 }
 
 .hero__gif {
@@ -81,7 +81,7 @@ a:hover {
 
 .main__socialbar {
     position: fixed;
-    top: 25%;
+    top: 225px;
     right: 20px;
     transform: translateY(-50%);
     list-style-type: none;
@@ -206,9 +206,6 @@ a:hover {
 
 /*========== GRID ==============*/
 
-/*.grid {
-
-}*/
 
 .colored-shape {
     width: 100%;
@@ -341,7 +338,7 @@ a:hover {
     background-color: #F7F3EE;
     border: 4px solid #181716;
     box-shadow: 12px 18px 0 #FFFEFE;
-    max-width: 1772px;
+    max-width: 100%;
     padding: 0 80px;
 }
 
@@ -462,12 +459,15 @@ a:hover {
     font-weight: 500;
     text-transform: uppercase;
     color: #181716;
-    width: 320px;
-    margin-top: 10px;
     padding: 10px 0;
     border: 3px solid #181716;
     background-color: transparent;
     transition: background-color 0.3s, color 0.3s;
+}
+
+.text-col .card-button {
+    width: 320px;
+    margin-top: 10px;
 }
 
 .card-button:hover {
@@ -479,11 +479,6 @@ a:hover {
 
 /* CIRCLE BANNER VERSION */
 
-/*
-.banner {
-
-}
-*/
 
 .banner-container {
     position: relative;
@@ -518,7 +513,11 @@ a:hover {
     color: #EC8D32;
     transform: translate(-50%, -50%);
     z-index: 1;
-    text-shadow: /*create outlines*/ -2px -2px 0 #F7F3EE, /* Top-left */ 2px -2px 0 #F7F3EE, /* Top-right */ -2px 2px 0 #F7F3EE, /* Bottom-left */ 2px 2px 0 #F7F3EE; /* Bottom-right */
+    text-shadow: /*create outlines*/
+            -2px -2px 0 #F7F3EE, /* Top-left */
+            2px -2px 0 #F7F3EE, /* Top-right */
+            -2px 2px 0 #F7F3EE, /* Bottom-left */
+            2px 2px 0 #F7F3EE; /* Bottom-right */
 }
 
 .contact-top {
@@ -636,9 +635,6 @@ a:hover {
 
 /* Instagram gallery */
 
-.gallery-container {
-
-}
 
 .gallery-item {
     margin-bottom: 10px;
@@ -724,13 +720,22 @@ a:hover {
 /*==========================*/
 
 
-/* Flex Container */
-.flex-container {
+/*.flex-container {
     display: flex;
-}
+}*/
 
 .section1 {
     margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.section1 .flex-container {
+    max-width: 1800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
 
 .section1 .column1 {
@@ -906,42 +911,146 @@ a:hover {
 .section2 .flex-container {
     display: flex;
     justify-content: center;
+    background-color: #EC8D32;
 }
 
 .logo-banner {
     display: flex;
+    max-width: 1800px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0;
-    background-color: #EC8D32;
+    padding: 20px;
 }
 
 /* section 3 what do i do */
 
-.section3 .column1 {
-    flex: 1;
-    position: relative;
+.section3 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+.section3 .flex-container {
+    max-width: 1800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 120px;
+}
+
+.section3 .column1,
+.section3 .column3 {
+    flex: 1;
+    padding: 20px;
+}
+
+.section3 .column2 {
+    flex: 0.5;
+    padding-top: 50px;
 }
 
 .diagram {
-    width: 110%;
+    max-width: 120%;
+    height: auto;
 }
 
-/*.section3 .column2 {
-    display: flex;
-    justify-content: flex-end; !* Align content to the right *!
-    align-items: flex-end; !* Align button to the bottom right *!
-}*/
+.green {
+    background-color: #ACCF97;
+}
 
-/*.section3 {
+.column3 .card-button {
+    width: 400px;
     margin-top: 20px;
-}*/
-
-/* Column 3 */
-.section3 .column3 {
-    max-width: 600px;
-    margin-right: 200px;
 }
+
+/* video section */
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.video-placeholder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFA53F;
+    color: #181716;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.video-button:hover {
+    background-color: #181716;
+    color: #FFA53F;
+}
+
+/*===============*/
+/* Feedback section */
+
+.text-blocks-section {
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+    margin: 0 auto 40px;
+}
+
+.text-block {
+    width: 300px;
+    padding: 40px;
+    background-color: #181716;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.block-title, .block-subtitle {
+    text-align: center;
+}
+
+.block-title {
+    color: #FFA53F;
+    font-size: 24px;
+}
+
+.block-subtitle {
+    color: #F7F3EE;
+    font-size: 14px;
+    font-family: 'Lexend Exa', sans-serif;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.block-text {
+    font-size: 18px;
+    color: #F7F3EE;
+}
+
+.icon {
+    /*width: 40px;
+    height: 40px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+

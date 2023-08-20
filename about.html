@@ -24,41 +24,41 @@
 
 <!--==================== HEADER ====================-->
 
-<header>
-    <div class="header__container">
-        <nav class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center">
-                <a href="index.html">
-                    <img src="assets/site/mini%20logo.svg" alt="Logo" class="logo">
-                </a>
-                <div class="header__empty-space"></div>
-            </div>
-            <div class="header__buttons d-flex">
-                <a href="#" class="header__button">Portfolio</a>
-                <a href="#" class="header__button active">About</a>
-                <a href="#" class="header__button">Blog</a>
-                <a href="#" class="header__button">Contact</a>
-            </div>
-            <div class="header__empty-space"></div>
+<header class="header__container">
+
+    <div class="top-banner">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/site/mini%20logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav class="nav__items">
+            <a href="#" class="header__button">Portfolio</a>
+            <a href="about.html" class="header__button active">About</a>
+            <a href="#" class="header__button">Blog</a>
+            <a href="#" class="header__button">Contact</a>
         </nav>
+        <div></div>
     </div>
+
+    <!--==================== SIDEBAR ====================-->
+
+    <nav>
+        <ul class="main__socialbar">
+            <li class="main__socialbar__item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="main__socialbar__item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="main__socialbar__item">
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </li>
+        </ul>
+    </nav>
+
 </header>
 
-<!--==================== SIDEBAR ====================-->
-
-<nav>
-    <ul class="main__socialbar">
-        <li class="main__socialbar__item">
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </li>
-        <li class="main__socialbar__item">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="main__socialbar__item">
-            <a href="#"><i class="fab fa-behance"></i></a>
-        </li>
-    </ul>
-</nav>
 
 <!--==================== MAIN ====================-->
 
@@ -182,17 +182,67 @@
                 </button>
             </div>
             <div class="column3">
-                <article>
-                    <p>I've experimented with: logo animations, title sequences, kinetic type, trailers, after-movies,
-                        corporate videos & multi camera live capturing. A few of my pet projects are online
-                        collaborations of which I'm immensely proud!</p>
-                    <p>My proudest moment is being invited by my favourite comedians to create animated end cards for
-                        their YouTube Channel after they spotted my very first motion graphic experiment, which I had
-                        entered as part of a fanart challenge. Proof that being a <i>fangirl</i> can be an asset to life!</p>
-                </article>
+                <p>I've experimented with: logo animations, title sequences, kinetic type, trailers, after-movies,
+                    corporate videos & multi camera live capturing. A few of my pet projects are online
+                    collaborations of which I'm immensely proud!</p>
+                <button class="card-button">Read More</button>
+            </div>
+            <div class="column3 green">
+                <p>My proudest moment is being invited by my favourite comedians to create animated end cards for
+                    their YouTube Channel after they spotted my very first motion graphic experiment, which I had
+                    entered as part of a <em>fan art</em> challenge.
+                </p>
             </div>
         </div>
     </section>
+
+    <!-- SECTION 4 videos -->
+
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-placeholder">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l_3Emm835VM" allowfullscreen></iframe>
+                <button class="video-button">View Full Project</button>
+            </div>
+            <div class="video-placeholder">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c7zg06B7k9M" allowfullscreen></iframe>
+                <button class="video-button">View Full Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5 Feedback -->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="heading-container">
+                <h1 class="heading">Feedback</h1>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="text-blocks-section">
+        <div class="text-block">
+            <h2 class="block-title">Person's Name</h2>
+            <h3 class="block-subtitle">Person's Role</h3>
+            <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse laboriosam odit quia repellat. Autem, dignissimos earum illum incidunt magni mollitia nemo, odio officia quia quibusdam reprehenderit repudiandae sapiente voluptatem?</p>
+            <div class="icon"><img src="assets/site/quotes.svg" alt="Orange Quote Marks"></div>
+        </div>
+        <div class="text-block">
+            <h2 class="block-title">Person's Name</h2>
+            <h3 class="block-subtitle">Person's Role</h3>
+            <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse laboriosam odit quia repellat. Autem, dignissimos earum illum incidunt magni mollitia nemo, odio officia quia quibusdam reprehenderit repudiandae sapiente voluptatem?</p>
+            <div class="icon"><img src="assets/site/quotes.svg" alt="Orange Quote Marks"></div>
+        </div>
+        <div class="text-block">
+            <h2 class="block-title">Person's Name</h2>
+            <h3 class="block-subtitle">Person's Role</h3>
+            <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse laboriosam odit quia repellat. Autem, dignissimos earum illum incidunt magni mollitia nemo, odio officia quia quibusdam reprehenderit repudiandae sapiente voluptatem?</p>
+            <div class="icon"><img src="assets/site/quotes.svg" alt="Orange Quote Marks"></div>
+        </div>
+    </section>
+
 
 </main>
 
