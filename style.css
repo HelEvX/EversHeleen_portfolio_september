@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,34 +22,27 @@ a:hover {
 
 /*======================================================================*/
 
-.header__container {
+.top-banner {
     position: fixed;
-    top: 0;
     background-color: #181716;
-    width: 100%;
+    color: #F7F3EE;
     height: 111px;
-    padding: 20px 40px;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 100;
 }
 
-.header__container nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
+.header__logo {
     max-width: 60px;
-}
-
-.header__empty-space {
-    width: 400px;
 }
 
 .header__buttons {
     display: flex;
-    gap: 2rem;
     align-items: center;
+    justify-content: center;
 }
 
 .header__button {
@@ -70,33 +63,20 @@ a:hover {
     color: #FFA53F;
 }
 
-.header__empty-space {
-    flex-grow: 1;
-    min-width: 40px;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /*overflow: hidden;*/
-    z-index: -1;
-}
-
-.hero__gif {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 /*=========*/
 
 .main {
     background-color: #FFFEFE;
-    /*overflow-x: hidden;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__gif {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .main__socialbar {
@@ -105,7 +85,7 @@ a:hover {
     right: 20px;
     transform: translateY(-50%);
     list-style-type: none;
-    z-index: 100; /*keep on top of everything else*/
+    z-index: 100;
 }
 
 .main__socialbar__item {
@@ -188,6 +168,7 @@ a:hover {
 }
 
 .heading-container {
+    position: relative;
     padding: 120px 0 40px 0;
     text-align: center;
 }
@@ -225,11 +206,9 @@ a:hover {
 
 /*========== GRID ==============*/
 
-.grid-row-custom {
-    position: relative;
-    /*overflow: hidden;*/
-    /*z-index: 0;*/
-}
+/*.grid {
+
+}*/
 
 .colored-shape {
     width: 100%;
@@ -245,30 +224,37 @@ a:hover {
     background-color: #602F00;
     /*background-image: url('path-to-gif/shape1.gif');*/
 }
+
 .shape-2 {
     background-color: #B7370E;
     /*background-image: url('path-to-gif/shape2.gif');*/
 }
+
 .shape-3 {
     background-color: #F07357;
     /*background-image: url('path-to-gif/shape3.gif');*/
 }
+
 .shape-4 {
     background-color: #EC8D32;
     /*background-image: url('path-to-gif/shape4.gif');*/
 }
+
 .shape-5 {
     background-color: #FFA53F;
     /*background-image: url('path-to-gif/shape5.gif');*/
 }
+
 .shape-6 {
     background-color: #549F62;
     /*background-image: url('path-to-gif/shape6.gif');*/
 }
+
 .shape-7 {
     background-color: #ACCF97;
     /*background-image: url('path-to-gif/shape7.gif');*/
 }
+
 .shape-8 {
     background-color: #F7F3EE;
     /*background-image: url('path-to-gif/shape8.gif');*/
@@ -301,10 +287,10 @@ a:hover {
     top: 46%;
     left: 35%; /* for slide in animation */
     transform: translate(-50%, -50%);
-    /*z-index: -1;*/
     opacity: 0; /* Start with opacity 0 */
     transition: left 0.5s ease, opacity 0.5s ease;
 }
+
 /* line animation */
 .overlay:hover .overlay-shape {
     left: 50%; /* Slide in from the left on hover */
@@ -333,31 +319,30 @@ a:hover {
 
 .info-box {
     position: relative;
-    z-index: 0;
-    margin-top: 100px;
+    margin: 0 auto;
 }
 
-.background-shape {
-    position: relative;
-    margin: 0 auto;
-    /*background: linear-gradient(45deg, #FFA53F, #B7370E);*/
-    background-image: url('assets/img/orange grain BG.png');
-    background-repeat: no-repeat;
+.background-shape img {
     width: 85%;
-    padding-top: 38%;
-    z-index: -1;
+    transform: translate(15%, 10%);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .card {
     display: flex;
+    justify-content: center;
     background-color: #F7F3EE;
     border: 4px solid #181716;
     box-shadow: 12px 18px 0 #FFFEFE;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    z-index: 0;
+    max-width: 1772px;
+    padding: 0 80px;
 }
 
 .circle-col,
@@ -365,18 +350,18 @@ a:hover {
 .text-col {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     position: relative;
+}
+
+.dots-col {
+    flex: auto;
 }
 
 .circle-col,
 .text-col {
     padding: 40px 80px;
     flex: 1;
-}
-
-.dots-col {
-    flex: auto;
 }
 
 .overlaying-circle {
@@ -455,16 +440,11 @@ a:hover {
     border: none;
     padding: 0;
     cursor: pointer;
-    position: relative;
-}
-
-.button-icon {
     width: 120px;
     height: 120px;
-    display: block;
-    position: absolute;
-    top: 200px;
-    /*left: -40%;*/
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
     transform: translateX(-50%);
 }
 
@@ -499,6 +479,12 @@ a:hover {
 
 /* CIRCLE BANNER VERSION */
 
+/*
+.banner {
+
+}
+*/
+
 .banner-container {
     position: relative;
     margin: 50px auto;
@@ -532,11 +518,7 @@ a:hover {
     color: #EC8D32;
     transform: translate(-50%, -50%);
     z-index: 1;
-    text-shadow: /*create outlines*/
-            -2px -2px 0 #F7F3EE, /* Top-left */
-            2px -2px 0 #F7F3EE, /* Top-right */
-            -2px  2px 0 #F7F3EE, /* Bottom-left */
-            2px  2px 0 #F7F3EE; /* Bottom-right */
+    text-shadow: /*create outlines*/ -2px -2px 0 #F7F3EE, /* Top-left */ 2px -2px 0 #F7F3EE, /* Top-right */ -2px 2px 0 #F7F3EE, /* Bottom-left */ 2px 2px 0 #F7F3EE; /* Bottom-right */
 }
 
 .contact-top {
@@ -655,10 +637,11 @@ a:hover {
 /* Instagram gallery */
 
 .gallery-container {
-    margin-bottom: 10px;
+
 }
 
 .gallery-item {
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -744,13 +727,13 @@ a:hover {
 /* Flex Container */
 .flex-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+}
+
+.section1 {
     margin-top: 110px;
 }
 
-/* Column 1 */
-.column1-intro {
+.section1 .column1 {
     flex: 1;
     position: relative;
 }
@@ -769,13 +752,10 @@ a:hover {
 }
 
 /* Column 3 */
-.column3 {
-    flex: auto;
-    align-items: flex-end;
+.section1 .column3 {
     max-width: 600px;
     margin-top: 80px;
     margin-right: 200px;
-    position: relative;
 }
 
 .column3 h2 {
@@ -839,11 +819,13 @@ a:hover {
     left: -20px;
     animation: float-rotate-1 12s linear infinite;
 }
+
 .circle-shape-2-combo {
     position: relative;
     left: 40px;
     animation: float-rotate-2 16s linear infinite;
 }
+
 .circle-shape-3-combo {
     position: relative;
     animation: float-rotate-3 24s linear infinite;
@@ -921,10 +903,6 @@ a:hover {
 
 /* Logo banner */
 
-.section2 {
-    background-color: #EC8D32;
-}
-
 .section2 .flex-container {
     display: flex;
     justify-content: center;
@@ -935,5 +913,35 @@ a:hover {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin: 20px auto;
+    padding: 20px 0;
+    background-color: #EC8D32;
+}
+
+/* section 3 what do i do */
+
+.section3 .column1 {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.diagram {
+    width: 110%;
+}
+
+/*.section3 .column2 {
+    display: flex;
+    justify-content: flex-end; !* Align content to the right *!
+    align-items: flex-end; !* Align button to the bottom right *!
+}*/
+
+/*.section3 {
+    margin-top: 20px;
+}*/
+
+/* Column 3 */
+.section3 .column3 {
+    max-width: 600px;
+    margin-right: 200px;
 }
