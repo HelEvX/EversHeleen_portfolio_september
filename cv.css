@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFEFE;
+}
+
+h2 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #EC8D32;
+}
+
+ul.orange-bullets {
+    list-style: none;
+    padding: 0;
+}
+
+ul.orange-bullets li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+ul.orange-bullets li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #EC8D32;
+}
+
+.josefin {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #181716;
+}
+
+.lexend {
+    font-family: "Lexend Exa", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #181716;
+}
+
+.light {
+    font-family: "Lexend Exa", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #c7a275;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+a:hover {
+    color: #549F62; /* New hover color */
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 20px auto;
+}
+
+.logo img {
+    max-width: 60px;
+}
+
+.heading-container {
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 60px;
+    color: #181716;
+}
+
+.line {
+    width: 270px;
+    height: 12px;
+    background-color: #EC8D32;
+    margin: 0 auto;
+}
+
+.button {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 240px;
+    margin-top: 10px;
+    color: #181716;
+    padding: 10px;
+    border: 3px solid #181716;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #181716;
+    color: #EC8D32;
+    cursor: pointer;
+}
+
+.education {
+    background-color: #F7F3EE;
+}
+
+.skills {
+    background-color: #EC8D32;
+}
+
+.picture {
+    background-color: #602F00;
+}
+
