@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FFFEFE;
+    overflow-x: hidden;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
 body p,
 body ul li {
     font-family: 'Josefin Sans', sans-serif;
@@ -24,6 +31,8 @@ a:hover {
 
 .top-banner {
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: #181716;
     color: #F7F3EE;
     height: 111px;
@@ -35,8 +44,9 @@ a:hover {
     z-index: 100;
 }
 
-.header__logo {
-    max-width: 60px;
+.header__logo,
+.empty-space {
+    width: 60px;
 }
 
 .header__buttons {
@@ -67,19 +77,16 @@ a:hover {
 /*=========*/
 
 .main {
-    background-color: #FFFEFE;
-    display: flex;
-    flex-direction: column;
-    /*margin: 0 auto;*/
+    margin-top: 110px;
 }
 
 .hero__gif {
     width: 100%;
-    height: auto;
     object-fit: cover;
+    margin-top: -50px;
 }
 
-.main__socialbar {
+.nav__socialbar {
     position: fixed;
     top: 225px;
     right: 20px;
@@ -88,11 +95,11 @@ a:hover {
     z-index: 100;
 }
 
-.main__socialbar__item {
+.nav__socialbar__item {
     margin-bottom: 15px;
 }
 
-.main__socialbar__item a {
+.nav__socialbar__item a {
     display: block;
     width: 40px;
     height: 40px;
@@ -105,12 +112,13 @@ a:hover {
     transition: background-color 0.3s;
 }
 
-.main__socialbar__item a:hover {
+.nav__socialbar__item a:hover {
     background-color: #FFA53F;
     color: #181716;
 }
 
 .footer {
+    position: relative;
     background-color: #181716;
     color: #F7F3EE;
     height: 220px;
@@ -169,7 +177,7 @@ a:hover {
 
 .heading-container {
     position: relative;
-    padding: 120px 0 40px 0;
+    padding: 120px 0 40px;
     text-align: center;
 }
 
@@ -314,17 +322,24 @@ a:hover {
 
 /* INFO CARD SECTION */
 
-.info-box {
+
+.info-box,
+.form-box {
     position: relative;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1800px;
 }
 
 .background-shape img {
     width: 85%;
     transform: translate(15%, 10%);
+    padding: 40px 0;
 }
 
-.card-overlay {
+.card-overlay,
+.form-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -453,7 +468,9 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.card-button {
+.card-button,
+.unstyled-button {
+    display: block;
     font-family: 'Lexend Exa', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -465,12 +482,14 @@ a:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.text-col .card-button {
+.text-col .card-button,
+.unstyled-button {
     width: 320px;
     margin-top: 10px;
 }
 
-.card-button:hover {
+.card-button:hover,
+.unstyled-button:hover {
     background-color: #181716;
     color: #EC8D32;
     cursor: pointer;
@@ -479,8 +498,7 @@ a:hover {
 
 /* CIRCLE BANNER VERSION */
 
-
-.banner-container {
+.banner {
     position: relative;
     margin: 50px auto;
     text-align: center;
@@ -719,17 +737,6 @@ a:hover {
 /* ABOUT */
 /*==========================*/
 
-
-/*.flex-container {
-    display: flex;
-}*/
-
-.section1 {
-    margin-top: 110px;
-    display: flex;
-    justify-content: center;
-}
-
 .section1 .flex-container {
     max-width: 1800px;
     width: 100%;
@@ -961,7 +968,7 @@ a:hover {
 
 .column3 .card-button {
     width: 400px;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 /* video section */
@@ -1053,4 +1060,63 @@ a:hover {
     justify-content: center;
     padding-top: 40px;
 }
+
+
+/*==========================*/
+/*==========================*/
+/* CONTACT */
+/*==========================*/
+
+.container-contact {
+    margin-top: 110px;
+}
+
+.sidebar {
+
+}
+
+.main-contact {
+    flex-grow: 1;
+}
+
+.contact-text {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 80px;
+}
+
+.petri-overlaying-circle {
+    width: 391px;
+    height: 391px;
+    border-radius: 50%;
+    border: 4px solid #181716;
+    position: absolute;
+    top: 25px;
+    left: 60px;
+}
+
+/* form reset */
+
+.custom-form div {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/*.custom-form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}*/
+
 

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heleen Evers - Portfolio Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Josefin+Slab:wght@700&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@500&display=swap"
+          rel="stylesheet">
+    <!--Bootstrap reset-->
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <!--Bootstrap grid-->
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/7118d8a9c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-css/all.css">
+</head>
+
+<body>
+
+<!--==================== HEADER ====================-->
+
+<header class="header__container">
+
+    <div class="top-banner">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/site/mini%20logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav class="nav__items">
+            <a href="#" class="header__button">Portfolio</a>
+            <a href="about.html" class="header__button">About</a>
+            <a href="#" class="header__button">Blog</a>
+            <a href="contact.html" class="header__button active">Contact</a>
+        </nav>
+        <div class="empty-space"></div>
+    </div>
+
+    <!--==================== SIDEBAR ====================-->
+
+    <nav>
+        <ul class="nav__socialbar">
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<!--========================================================-->
+<!--========================================================-->
+<!--========================================================-->
+
+<div class="container-contact">
+    <!--==================== ASIDE ====================-->
+
+    <aside>
+        <h3>My Gear & Software</h3>
+        <h4>Photo & Video</h4>
+        <ul>
+            <li>Sony Alpha A7 mark III</li>
+            <li>Panasonic Lumix DMC-FZ300</li>
+            <li>Canon XA35/XA40 camcorder*</li>
+        </ul>
+        <p>* rented equipment for past projects</p>
+        <h4>Post & Design</h4>
+        <ul>
+            <li>Adobe CC</li>
+            <li>Davinci Resolve</li>
+            <li>Blender</li>
+            <li>Figma</li>
+        </ul>
+        <h3>Languages</h3>
+        <h4>English & Dutch (Nederlands)</h4>
+
+    </aside>
+
+    <!--==================== MAIN ====================-->
+
+    <main class="main main-contact">
+
+        <section>
+                <div class="contact-text">
+
+                    <div class="text-col">
+                        <h2 class="card-title">Get in Touch</h2>
+                        <p>I'd love to discuss any design ideas with you. I'm available for one-off projects and
+                            long-term
+                            plans alike.
+                        </p>
+                        <p>I have lots of experience working remotely with collaborators and clients worldwide using
+                            various
+                            online platforms.
+                        </p>
+                        <p>I'm happy to interact with you in English or Dutch. Let's explore what my style can infuse
+                            into
+                            your brand!</p>
+                    </div>
+
+                    <div class="dots-col">
+                        <div class="circle-shape circle-shape-1"></div>
+                        <div class="circle-shape circle-shape-1-fill"></div>
+                        <div class="circle-shape circle-shape-2"></div>
+                        <div class="circle-shape circle-shape-2-fill"></div>
+                        <div class="circle-shape circle-shape-3"></div>
+                        <div class="circle-shape circle-shape-3-fill"></div>
+                    </div>
+                    <div class="circle-col">
+                        <div class="overlaying-container">
+                            <div class="petri-overlaying-circle"></div>
+                            <img src="assets/img/petri-dish.png" alt="Petri Dish">
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <form action="mailto:heleen.evers@student.pxl.be" method="post" enctype="text/plain" class="custom-form">
+            <section class="form-box">
+                <div class="background-shape">
+                    <img src="assets/img/orange%20grain%20BG.png" alt="bg">
+                </div>
+                <div class="form-overlay">
+                    <div class="card">
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <label for="message"></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message."
+                                      required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <input type="submit" value="Send" class="unstyled-button info-box">
+            </div>
+        </form>
+    </main>
+
+</div>
+
+<!--==================== FOOTER ====================-->
+
+<footer class="footer">
+    <div class="footer__row">
+        <div class="footer__button">
+            <button class="footer__button__style">All Projects</button>
+        </div>
+        <div class="footer__button">
+            <button class="footer__button__style">Experiments</button>
+        </div>
+    </div>
+    <div class="footer__row">
+        <a href="#" class="footer__icon">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-behance"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-vimeo-v"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    <div class="footer__row">
+        <p class="footer__copyright">Created by Heleen Evers</p>
+    </div>
+</footer>
+
+</body>
+</html>
