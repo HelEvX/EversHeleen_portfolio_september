@@ -59,6 +59,7 @@ a:hover {
     font-family: 'Lexend Exa', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    text-transform: uppercase;
     color: #F7F3EE;
     text-decoration: none;
     transition: color 0.3s;
@@ -84,6 +85,94 @@ a:hover {
     width: 100%;
     object-fit: cover;
     margin-top: -50px;
+}
+
+/* hero shapes */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__shapes {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 30vw;
+    height: 30vw;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.large-gradient {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #181716, #EC8D32);
+    mix-blend-mode: overlay;
+    top: 40%;
+    left: 115%;
+    animation: float-rotate-0 16s linear infinite;
+}
+
+@keyframes float-rotate-0 {
+    0%, 100% {
+        transform: translate(0px, 0px) rotate(0);
+        animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    25% {
+        transform: translate(10px, 5px) rotate(30deg);
+        animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    50% {
+        transform: translate(5px, 15px) rotate(0deg);
+        animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    75% {
+        transform: translate(-5px, 5px) rotate(-30deg);
+        animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+}
+
+.small-ora-overlay {
+    width: 3.6vw;
+    height: 3.6vw;
+    background-color: #FFA53F;
+    mix-blend-mode: overlay;
+    top: 20%;
+    left: 195%;
+    animation: float-rotate-0 8s linear infinite;
+}
+
+.small-red-burn {
+    width: 3.6vw;
+    height: 3.6vw;
+    background-color: #B7370E;
+    mix-blend-mode: color-dodge;
+    top: 38%;
+    left: 185%;
+    animation: float-rotate-2 11s linear infinite;
+}
+
+.small-ora-burn {
+    width: 3.6vw;
+    height: 3.6vw;
+    background-color: #FFA53F;
+    mix-blend-mode: color-burn;
+    top: 70%;
+    left: 190%;
+    rotate: -90deg;
+    animation: float-rotate-3 14s linear infinite;
+}
+
+/*===*/
+
+.banner-img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .nav__socialbar {
@@ -221,8 +310,11 @@ a:hover {
     position: relative;
     background-size: cover;
     background-position: center;
-    cursor: pointer;
     transition: transform 0.3s;
+}
+
+.clickable .colored-shape {
+    cursor: pointer;
 }
 
 .shape-1 {
@@ -285,14 +377,14 @@ a:hover {
 }
 
 .overlay-shape {
-    width: 240px;
-    height: 22px;
+    width: 25%;
+    padding-top: 2%;
     background-color: #B7370E;
     position: absolute;
     top: 46%;
     left: 35%; /* for slide in animation */
     transform: translate(-50%, -50%);
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0; /* Start opacity */
     transition: left 0.5s ease, opacity 0.5s ease;
 }
 
@@ -491,7 +583,7 @@ a:hover {
 .card-button:hover,
 .unstyled-button:hover {
     background-color: #181716;
-    color: #EC8D32;
+    color: #FFA53F;
     cursor: pointer;
 }
 
@@ -701,6 +793,7 @@ a:hover {
 
 .gallery-item:hover .gallery-overlay {
     opacity: 1;
+    cursor: pointer;
 }
 
 .gallery-text {
@@ -1118,5 +1211,171 @@ a:hover {
     margin-bottom: 10px;
     font-size: 16px;
 }*/
+
+
+/*==========================*/
+/*==========================*/
+/* PORTFOLIO */
+/*==========================*/
+
+.portfolio-overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.band {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    height: 360px;
+    overflow: hidden;
+}
+
+.band-light {
+    background-color: #F7F3EE;
+    color: #181716;
+}
+
+.band-dark {
+    background-color: #181716;
+    color: #F7F3EE;
+}
+
+.portfolio-overview .column {
+    flex: 2;
+    padding: 20px;
+}
+
+.portfolio-overview .column-border {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    padding: 28px 0;
+    border: 4px solid;
+    height: 300px;
+}
+
+.portfolio-overview .column-image {
+    overflow: hidden;
+    background-color: #ACCF97;
+    height: 100%;
+}
+
+
+.portfolio-overview .column-text {
+    flex: 1;
+    align-self: flex-start;
+    margin: 20px;
+}
+
+h1.band-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+}
+
+h2.band-text {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.band-light h2.band-text {
+    color: #EC8D32;
+}
+
+.band-dark h2.band-text {
+    color: #FFA53F;
+}
+
+.band-dark p.band-text {
+    color: #F7F3EE;
+}
+
+.card-button-reverse {
+    display: block;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #F7F3EE;
+    padding: 10px 0;
+    border: 3px solid #F7F3EE;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-button-reverse:hover {
+    background-color: #F7F3EE;
+    color: #EC8D32;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+/* PROJECT PAGES */
+/*==========================*/
+
+.portfolio-subtitle {
+    display: flex;
+}
+
+.portfolio-subtitle h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.container-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-bottom: 180px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+}
+
+.description {
+    width: 430px;
+}
+
+.scope {
+    width: 220px;
+}
+
+/* h1 style */
+.container-portfolio h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+/* h2 style */
+.container-portfolio h2 {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #EC8D32;
+    margin-bottom: 40px;
+}
+
+/* h3 style */
+.container-portfolio h3 {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
 
 
