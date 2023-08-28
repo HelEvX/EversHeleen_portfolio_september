@@ -63,98 +63,102 @@
 <!--========================================================-->
 <!--========================================================-->
 
-<div class="container-contact">
+<div class="container-contact main">
     <!--==================== ASIDE ====================-->
 
     <aside>
         <h3>My Gear & Software</h3>
-        <h4>Photo & Video</h4>
+        <div class="h4-container">
+            <div class="h4-line"></div>
+            <h4>Photo & Video</h4>
+        </div>
         <ul>
             <li>Sony Alpha A7 mark III</li>
             <li>Panasonic Lumix DMC-FZ300</li>
-            <li>Canon XA35/XA40 camcorder*</li>
+            <li>Canon XA35/XA40 camcorder<span>*</span></li>
         </ul>
         <p>* rented equipment for past projects</p>
-        <h4>Post & Design</h4>
+        <div class="h4-container">
+            <div class="h4-line"></div>
+            <h4>Post & Design</h4>
+        </div>
         <ul>
-            <li>Adobe CC</li>
+            <li>Adobe CC <img src="assets/site/Adobe%20icons.svg" alt="Adobe icons" class="adobe-icons"></li>
             <li>Davinci Resolve</li>
             <li>Blender</li>
             <li>Figma</li>
         </ul>
         <h3>Languages</h3>
-        <h4>English & Dutch (Nederlands)</h4>
-
+        <h4>English &<br>Dutch/Nederlands</h4>
+        <a href="cv.html" class="cv-button">
+            <img src="assets/site/download-cv-button-orange.svg" alt="Download CV button">
+        </a>
     </aside>
 
     <!--==================== MAIN ====================-->
 
-    <main class="main main-contact">
-
-        <section>
-                <div class="contact-text">
-
-                    <div class="text-col">
-                        <h2 class="card-title">Get in Touch</h2>
-                        <p>I'd love to discuss any design ideas with you. I'm available for one-off projects and
-                            long-term
-                            plans alike.
-                        </p>
-                        <p>I have lots of experience working remotely with collaborators and clients worldwide using
-                            various
-                            online platforms.
-                        </p>
-                        <p>I'm happy to interact with you in English or Dutch. Let's explore what my style can infuse
-                            into
-                            your brand!</p>
-                    </div>
-
-                    <div class="dots-col">
-                        <div class="circle-shape circle-shape-1"></div>
-                        <div class="circle-shape circle-shape-1-fill"></div>
-                        <div class="circle-shape circle-shape-2"></div>
-                        <div class="circle-shape circle-shape-2-fill"></div>
-                        <div class="circle-shape circle-shape-3"></div>
-                        <div class="circle-shape circle-shape-3-fill"></div>
-                    </div>
-                    <div class="circle-col">
-                        <div class="overlaying-container">
-                            <div class="petri-overlaying-circle"></div>
-                            <img src="assets/img/petri-dish.png" alt="Petri Dish">
-                        </div>
-                    </div>
-
+    <section>
+        <div class="contact-text">
+            <div class="contact-text-col">
+                <h2 class="card-title">Get in Touch</h2>
+                <p>I'd love to discuss any design ideas with you. I'm available for one-off projects and
+                    long-term
+                    plans alike.
+                </p>
+                <p>I have lots of experience working remotely with collaborators and clients worldwide using
+                    various
+                    online platforms.
+                </p>
+                <p>I'm happy to interact with you in English or Dutch. Let's explore what my style can infuse
+                    into
+                    your brand!</p>
+            </div>
+            <div class="dots-col">
+                <div class="circle-shape circle-shape-1"></div>
+                <div class="circle-shape circle-shape-1-fill"></div>
+                <div class="circle-shape circle-shape-2"></div>
+                <div class="circle-shape circle-shape-2-fill"></div>
+                <div class="circle-shape circle-shape-3"></div>
+                <div class="circle-shape circle-shape-3-fill"></div>
+            </div>
+            <div class="petri-col">
+                <div class="overlaying-container">
+                    <div class="petri-overlaying-circle"></div>
+                    <img src="assets/img/petri-dish.png" alt="Petri Dish">
                 </div>
-        </section>
+            </div>
+        </div>
 
-        <form action="mailto:heleen.evers@student.pxl.be" method="post" enctype="text/plain" class="custom-form">
-            <section class="form-box">
-                <div class="background-shape">
-                    <img src="assets/img/orange%20grain%20BG.png" alt="bg">
-                </div>
-                <div class="form-overlay">
-                    <div class="card">
-                        <div>
+        <div class="contact-form info-box">
+            <div class="form-background-shape">
+                <img src="assets/img/grain-gradient-bg.jpg" alt="bg">
+            </div>
+            <form action="mailto:heleen.evers@student.pxl.be" method="post" enctype="text/plain"
+                  class="custom-form card-overlay">
+                <div class="form-data">
+                    <div class="form-id">
+                        <div class="name-box">
                             <label for="name"></label>
                             <input type="text" id="name" name="name" placeholder="Name" required>
                         </div>
-                        <div>
+                        <div class="email-box">
                             <label for="email"></label>
                             <input type="email" id="email" name="email" placeholder="Email" required>
                         </div>
-                        <div>
-                            <label for="message"></label>
-                            <textarea id="message" name="message" rows="5" placeholder="Write your message."
-                                      required></textarea>
-                        </div>
+                    </div>
+                    <div class="form-message">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" rows="10" placeholder="Write your message."
+                                  required></textarea>
                     </div>
                 </div>
-            </section>
-            <div>
-                <input type="submit" value="Send" class="unstyled-button info-box">
-            </div>
-        </form>
-    </main>
+                <div class="form-button">
+                    <input type="submit" value="Send" class="unstyled-button">
+                </div>
+            </form>
+        </div>
+
+    </section>
 
 </div>
 

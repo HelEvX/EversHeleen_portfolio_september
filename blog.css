@@ -6,9 +6,9 @@
 
 body {
     background-color: #FFFEFE;
-    overflow-x: hidden;
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body p,
@@ -110,6 +110,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
 }
 
 .footer__row {
@@ -211,17 +212,37 @@ a:hover {
     margin: 70px 0 40px;
 }
 
-.heading {
+.heading-container-centered {
+    position: relative;
+    margin: 70px 0 40px;
+    text-align: center;
+}
+
+.blog-title {
     font-family: 'Lexend Exa', sans-serif;
-    font-size: 60px;
-    font-weight: 400;
     color: #181716;
     margin-bottom: 20px;
+    font-size: 80px;
+}
+
+.page-title {
+    font-family: 'Lexend Exa', sans-serif;
+    color: #181716;
+    margin-bottom: 12px;
+    font-size: 60px;
+    font-weight: 400;
 }
 
 .line {
     width: 270px;
     height: 24px;
+    background-color: #EC8D32;
+    margin: 0 auto;
+}
+
+.line-small {
+    width: 180px;
+    height: 12px;
     background-color: #EC8D32;
 }
 
@@ -335,6 +356,13 @@ hr {
     opacity: 1;
 }
 
+hr.orange-line {
+    height: 2px;
+    background-color: #EC8D32;
+    border: none;
+    opacity: 1;
+}
+
 .recent-posts {
     display: flex;
     margin: 80px auto;
@@ -363,23 +391,42 @@ button {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
+    margin-bottom: 80px;
+}
+
+.blog-tiles-container a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .blog-tile {
     width: 345px;
     height: 560px;
-    border: 2px solid #181716;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #181716;
+    transition: background-color 0.3s;
+}
+
+.blog-tile:hover {
+    background-color: #F7F3EE;
 }
 
 .blog-body {
-    padding: 10px 40px;
+    padding: 0 40px;
 }
 
-.blog-tile img {
-    height: inherit;
-    max-height: 200px;
+.blog-cover {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.blog-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .tags {
@@ -389,12 +436,12 @@ button {
     font-family: "Lexend Exa", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+    margin-top: 5px;
 }
 
 .tile-author-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 8px 0;
 }
 
@@ -404,21 +451,30 @@ h1.tile-title {
     margin: 10px 0;
 }
 
+.text-ellips {
+    display: flex;
+    align-items: end;
+}
+
 .tile-text {
-    max-height: 150px;
+    height: auto;
+    max-height: 120px;
+    margin: 0 5px 0 0;
     overflow: hidden;
-    position: relative;
 }
 
 .tile-footer {
     display: flex;
     justify-content: space-between;
+    height: 90px;
 }
 
 .views,
-.likes {
+.likes,
+.team {
     display: flex;
     align-items: baseline;
+    margin-bottom: 20px;
 }
 
 .views p,
@@ -426,6 +482,16 @@ h1.tile-title {
     font-family: "Lexend Exa", sans-serif;
     padding: 0 5px;
     margin: 0;
+}
+
+.team p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.blog-tile i {
+    color: #181716;
 }
 
 .tile-author-details {
@@ -461,4 +527,13 @@ h1.tile-title {
 
 .comments-box p i {
     padding-right: 25px;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: #181716;
+}
+
+.icon-link:hover {
+    color: #EC8D32;
 }

@@ -35,7 +35,7 @@
         <nav class="nav__items">
             <a href="portfolio.html" class="header__button">Portfolio</a>
             <a href="about.html" class="header__button">About</a>
-            <a href="blog.html" class="header__button">Blog</a>
+            <a href="blog-page.html" class="header__button active">Blog</a>
             <a href="contact.html" class="header__button">Contact</a>
         </nav>
         <div class="header__empty-space"></div>
@@ -62,100 +62,17 @@
 <!--==================== MAIN ====================-->
 
 <main class="main">
-    <div class="blog-nav">
-        <i class="fa-solid fa-chevron-left fa-xl back-icon"></i>
-        <i class="fa-solid fa-magnifying-glass fa-xl search-icon"></i>
+
+    <div class="heading-container-centered">
+        <h1 class="blog-title">Werkplekleren</h1>
+        <div class="line"></div>
     </div>
 
-    <div class="blog-container">
-        <div class="header">
-            <div class="author-info">
-                <div class="profile-picture">
-                    <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
-                </div>
-                <div class="author-details">
-                    <div class="small-text">Heleen Evers</div>
-                    <div class="small-text">• 3 September 2023</div>
-                    <div class="small-text">• 5 min read</div>
-                </div>
-                <div class="empty-space">
-                    <!--empty for space-->
-                </div>
-                <div>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            <div class="heading-container">
-                <h1 class="heading">Post title</h1>
-                <div class="line"></div>
-            </div>
-        </div>
-        <div class="cover-image">
-            <img src="assets/img/portfolio-placeholder.jpg" alt="Blog post 1 cover image">
-            <p class="caption">Caption for Blog Post Cover Image</p>
-        </div>
-        <div class="intro">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorem eaque nemo, nisi
-                numquam odit pariatur! Architecto aut cum cumque dignissimos dolor enim id nisi reiciendis repellat sed.
-                Sunt!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorem eaque nemo, nisi
-                numquam odit pariatur! Architecto aut cum cumque dignissimos dolor enim id nisi reiciendis repellat sed.
-                Sunt!</p>
-        </div>
-        <hr>
-        <div class="content">
-            <h2 class="subtitle">1. Subtitle</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci culpa cupiditate debitis deleniti
-                doloremque eaque, est eveniet, explicabo harum in libero, nihil nisi odio quos repellat veritatis
-                voluptate? Culpa.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci culpa cupiditate debitis deleniti
-                doloremque eaque, est eveniet, explicabo harum in libero, nihil nisi odio quos repellat veritatis
-                voluptate? Culpa.</p>
-            <div class="image">
-                <img src="assets/img/diagram.svg" alt="Image 1">
-                <p class="caption">Caption for Image 1</p>
-            </div>
-
-            <div class="callout">
-                <p>This is a callout section...</p>
-            </div>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-        </div>
-        <div class="stats">
-            <div>
-                <p class="small-text">2 </p>
-                <p class="small-text">views</p>
-            </div>
-            <div>
-                <p class="small-text">0 </p>
-                <p class="small-text">comments</p>
-            </div>
-            <div class="empty-space">
-                <!--empty space-->
-            </div>
-            <div class="likes-count">
-                <p class="small-text">2</p>
-                <i class="fa-regular fa-heart"></i>
-            </div>
-        </div>
-    </div>
-    <div class="recent-posts">
-        <h3>Recent Posts</h3>
-        <button>See All</button>
-    </div>
     <div class="blog-tiles-container">
-        <div class="blog-tile">
-            <img src="assets/img/portfolio-placeholder.jpg" alt="tile image placeholder">
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
             <div class="blog-body">
                 <div class="tags">
                     <div>#tag1</div>
@@ -164,36 +81,38 @@
                 </div>
                 <div class="tile-author-info">
                     <div class="profile-picture">
-                        <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
                     </div>
                     <div class="tile-author-details">
-                        <p class="smaller-text">Heleen Evers</p>
-                        <p class="smaller-text">3 September 2023 • 5 min</p>
-                    </div>
-                    <div class="empty-space">
-                        <!--empty for space-->
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 September 2023 • scope</p>
                     </div>
                 </div>
-                <h1 class="tile-title">Blog post title</h1>
-                <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error esse, quibusdam rem reprehenderit sed tempore.</p>
-                <hr>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
                 <div class="tile-footer">
-                    <div class="views">
-                        <i class="fa-regular fa-eye"></i>
-                        <p>x</p>
-                    </div>
-                    <div class="likes">
-                        <p>x</p>
-                        <i class="fa-regular fa-heart"></i>
+                    <div class="team">
+                        <i class="fa-solid fa-user-large"></i>
+                        <p>Individueel</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="blog-tile">
-            <img src="assets/img/portfolio-placeholder.jpg" alt="tile image placeholder">
+        </a>
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
             <div class="blog-body">
                 <div class="tags">
                     <div>#tag1</div>
@@ -202,36 +121,38 @@
                 </div>
                 <div class="tile-author-info">
                     <div class="profile-picture">
-                        <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
                     </div>
                     <div class="tile-author-details">
-                        <p class="smaller-text">Heleen Evers</p>
-                        <p class="smaller-text">3 September 2023 • 5 min</p>
-                    </div>
-                    <div class="empty-space">
-                        <!--empty for space-->
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 Sep 2023 • scope</p>
                     </div>
                 </div>
-                <h1 class="tile-title">Blog post title</h1>
-                <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error esse, quibusdam rem reprehenderit sed tempore.</p>
-                <hr>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
                 <div class="tile-footer">
-                    <div class="views">
-                        <i class="fa-regular fa-eye"></i>
-                        <p>x</p>
-                    </div>
-                    <div class="likes">
-                        <p>x</p>
-                        <i class="fa-regular fa-heart"></i>
+                    <div class="team">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Naam Achternaam, Naam Achternaam, Naam Achternaam</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="blog-tile">
-            <img src="assets/img/portfolio-placeholder.jpg" alt="tile image placeholder">
+        </a>
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
             <div class="blog-body">
                 <div class="tags">
                     <div>#tag1</div>
@@ -240,42 +161,275 @@
                 </div>
                 <div class="tile-author-info">
                     <div class="profile-picture">
-                        <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
                     </div>
                     <div class="tile-author-details">
-                        <p class="smaller-text">Heleen Evers</p>
-                        <p class="smaller-text">3 September 2023 • 5 min</p>
-                    </div>
-                    <div class="empty-space">
-                        <!--empty for space-->
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 Sep 2023 • scope</p>
                     </div>
                 </div>
-                <h1 class="tile-title">Blog post title</h1>
-                <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error esse, quibusdam rem reprehenderit sed tempore.</p>
-                <hr>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
                 <div class="tile-footer">
-                    <div class="views">
-                        <i class="fa-regular fa-eye"></i>
-                        <p>x</p>
-                    </div>
-                    <div class="likes">
-                        <p>x</p>
-                        <i class="fa-regular fa-heart"></i>
+                    <div class="team">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Naam Achternaam, Naam Achternaam, Naam Achternaam</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
+            <div class="blog-body">
+                <div class="tags">
+                    <div>#tag1</div>
+                    <div>#tag2</div>
+                    <div>#tag3</div>
+                </div>
+                <div class="tile-author-info">
+                    <div class="profile-picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
+                    </div>
+                    <div class="tile-author-details">
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 Sep 2023 • scope</p>
+                    </div>
+                </div>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
+                <div class="tile-footer">
+                    <div class="team">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Naam Achternaam, Naam Achternaam, Naam Achternaam</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
+            <div class="blog-body">
+                <div class="tags">
+                    <div>#tag1</div>
+                    <div>#tag2</div>
+                    <div>#tag3</div>
+                </div>
+                <div class="tile-author-info">
+                    <div class="profile-picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
+                    </div>
+                    <div class="tile-author-details">
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 Sep 2023 • scope</p>
+                    </div>
+                </div>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
+                <div class="tile-footer">
+                    <div class="team">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Naam Achternaam, Naam Achternaam, Naam Achternaam</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
+            <div class="blog-body">
+                <div class="tags">
+                    <div>#tag1</div>
+                    <div>#tag2</div>
+                    <div>#tag3</div>
+                </div>
+                <div class="tile-author-info">
+                    <div class="profile-picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
+                    </div>
+                    <div class="tile-author-details">
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 Sep 2023 • scope</p>
+                    </div>
+                </div>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
+                <div class="tile-footer">
+                    <div class="team">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Naam Achternaam, Naam Achternaam, Naam Achternaam</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
+            <div class="blog-body">
+                <div class="tags">
+                    <div>#tag1</div>
+                    <div>#tag2</div>
+                    <div>#tag3</div>
+                </div>
+                <div class="tile-author-info">
+                    <div class="profile-picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
+                    </div>
+                    <div class="tile-author-details">
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 Sep 2023 • scope</p>
+                    </div>
+                </div>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
+                <div class="tile-footer">
+                    <div class="team">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Naam Achternaam, Naam Achternaam, Naam Achternaam</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
+            <div class="blog-body">
+                <div class="tags">
+                    <div>#tag1</div>
+                    <div>#tag2</div>
+                    <div>#tag3</div>
+                </div>
+                <div class="tile-author-info">
+                    <div class="profile-picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
+                    </div>
+                    <div class="tile-author-details">
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 Sep 2023 • scope</p>
+                    </div>
+                </div>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
+                <div class="tile-footer">
+                    <div class="team">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Naam Achternaam, Naam Achternaam, Naam Achternaam</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="blog-tile">
+            <div class="blog-cover">
+                <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+            </div>
+            <div class="blog-body">
+                <div class="tags">
+                    <div>#tag1</div>
+                    <div>#tag2</div>
+                    <div>#tag3</div>
+                </div>
+                <div class="tile-author-info">
+                    <div class="profile-picture">
+                        <img src="assets/site/WPL-profile.svg" alt="WPL profile">
+                    </div>
+                    <div class="tile-author-details">
+                        <p class="smaller-text">Werkplekleren</p>
+                        <p class="smaller-text">03 Sep 2023 • scope</p>
+                    </div>
+                </div>
+                <h1 class="tile-title">Analyse Arbeidsmarkt</h1>
+            </div>
+            <div class="empty-space"></div>
+            <div class="blog-body">
+                <div class="text-ellips">
+                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
+                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
+                        esse, quibusdam rem reprehenderit sed tempore.</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="blog-body">
+                <hr class="orange-line">
+                <div class="tile-footer">
+                    <div class="team">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Naam Achternaam, Naam Achternaam, Naam Achternaam</p>
+                    </div>
+                </div>
+            </div>
+        </a>
 
-    </div>
-    <div class="comments">
-        <p>Comments</p>
-        <hr>
-        <div class="comments-box">
-            <p><i class="fa-solid fa-comment-slash fa-xl"></i> Commenting has been turned off.</p>
-        </div>
     </div>
 
 </main>
