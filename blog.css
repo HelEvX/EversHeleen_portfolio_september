@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFEFE;
+    overflow-x: hidden;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+body p,
+body ul li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #181716;
+}
+
+a:hover {
+    color: #549F62; /* New hover color */
+}
+
+/*======================================================================*/
+
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #181716;
+    color: #F7F3EE;
+    height: 111px;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header__logo,
+.header__empty-space {
+    width: 60px;
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__button {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #F7F3EE;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 20px 40px;
+}
+
+.header__button:hover {
+    color: #FFA53F;
+}
+
+.header__button.active {
+    color: #FFA53F;
+}
+
+.nav__socialbar {
+    position: fixed;
+    top: 225px;
+    right: 20px;
+    transform: translateY(-50%);
+    list-style-type: none;
+    z-index: 100;
+}
+
+.nav__socialbar__item {
+    margin-bottom: 15px;
+}
+
+.nav__socialbar__item a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #181716;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    color: #FFA53F;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav__socialbar__item a:hover {
+    background-color: #FFA53F;
+    color: #181716;
+}
+
+.footer {
+    position: relative;
+    background-color: #181716;
+    color: #F7F3EE;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+}
+
+.footer__button {
+    margin: 0 10px;
+}
+
+.footer__button__style {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #F7F3EE;
+    border: 2px solid #F7F3EE;
+    background: none;
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.footer__button__style:hover {
+    color: #FFA53F;
+    border-color: #FFA53F;
+}
+
+.footer__icon {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color: #F7F3EE;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer__icon:hover {
+    color: #FFA53F;
+}
+
+.footer__copyright {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #F7F3EE;
+}
+
+
+/*=========*/
+
+.main {
+    max-width: 1080px;
+    margin: 100px auto 0;
+}
+
+.blog-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-icon,
+.search-icon {
+    padding: 40px;
+    cursor: pointer;
+    color: #181716;
+}
+/* Javascript to create functional icons needed - not added here (see WPL2 version in 2024) */
+
+.blog-container {
+    border: 2px solid #181716;
+    padding: 35px 180px 80px;
+}
+
+.profile-picture img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-details {
+    display: flex;
+    gap: 6px;
+}
+
+.empty-space {
+    flex: 1;
+}
+
+.heading-container {
+    position: relative;
+    margin: 70px 0 40px;
+}
+
+.heading {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: #181716;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 270px;
+    height: 24px;
+    background-color: #EC8D32;
+}
+
+.small-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cover-image {
+    max-width: 720px;
+    height: auto;
+    margin-bottom: 75px;
+}
+
+h2,
+h3 {
+    font-family: 'Lexend Exa', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 40px auto;
+    color: #EC8D32;
+}
+
+h3 {
+    color: #181716;
+}
+
+.image {
+    margin: 30px auto;
+}
+
+.image img,
+.cover-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cover-image .caption {
+    text-align: center;
+}
+
+.caption,
+.callout p {
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.callout {
+    background-color: #F7F3EE;
+    border-left: 10px solid #EC8D32;
+    padding: 10px;
+    margin: 40px auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid #EC8D32;
+    border-bottom: 1px solid #EC8D32;
+}
+
+.social-icons a {
+    padding: 20px;
+    color: #181716;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #EC8D32;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 55px auto 0;
+}
+
+.stats div {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.likes-count {
+    display: flex;
+}
+
+.stats i:before,
+.author-info i:before {
+    color: #181716;
+}
+
+.stats:hover i:before,
+.author-info:hover i:before {
+    color: #EC8D32;
+}
+/* Javascript to create functional icons needed - not added here (see WPL2 version in 2024) */
+
+hr {
+    height: 1px;
+    background-color: #181716;
+    border: none;
+    opacity: 1;
+}
+
+.recent-posts {
+    display: flex;
+    margin: 80px auto;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #181716;
+    cursor: pointer;
+}
+
+.recent-posts button:hover {
+    text-decoration: underline;
+}
+
+/* blog tiles */
+
+.blog-tiles-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-tile {
+    width: 345px;
+    height: 560px;
+    border: 2px solid #181716;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-body {
+    padding: 10px 40px;
+}
+
+.blog-tile img {
+    height: inherit;
+    max-height: 200px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.tile-author-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+h1.tile-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.tile-text {
+    max-height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tile-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.views,
+.likes {
+    display: flex;
+    align-items: baseline;
+}
+
+.views p,
+.likes p {
+    font-family: "Lexend Exa", sans-serif;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.tile-author-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.smaller-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* comments section */
+
+.comments {
+    border: 2px solid #181716;
+    padding: 50px 180px;
+    margin: 80px auto;
+}
+
+.comments-box {
+    border: 1px solid #181716;
+    display: flex;
+    align-items: baseline;
+    justify-items: center;
+    padding: 30px 0;
+    margin: 60px auto;
+}
+
+.comments-box p {
+    margin: 0 auto;
+}
+
+.comments-box p i {
+    padding-right: 25px;
+}
