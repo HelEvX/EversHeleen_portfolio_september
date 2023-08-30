@@ -24,21 +24,42 @@
 
 <!--==================== HEADER ====================-->
 
-<header class="header__container">
 
+<header class="header__container">
+    <!--for large screens (default)-->
     <div class="top-banner">
         <div class="header__logo">
             <a href="index.html">
                 <img src="assets/site/mini%20logo.svg" alt="Logo">
             </a>
         </div>
+        <label for="nav-checkbox" class="nav__toggle">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </label>
         <nav class="nav__items">
             <a href="portfolio.html" class="header__button active">Portfolio</a>
             <a href="about.html" class="header__button">About</a>
             <a href="blog.html" class="header__button">Blog</a>
             <a href="contact.html" class="header__button">Contact</a>
         </nav>
-        <div class="empty-space"></div>
+        <div class="header__empty-space"></div>
+    </div>
+    <!--for flyout sidebar menu-->
+    <input type="checkbox" id="nav-checkbox" class="nav__checkbox">
+    <div id="nav-overlay" class="nav__overlay">
+        <nav class="menu__items">
+            <ul class="menu__list">
+                <li class="menu__item close-icon">
+                    <label for="nav-checkbox">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </label>
+                </li>
+                <li class="menu__item"><a href="portfolio.html" class="menu__link active">Portfolio</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 
     <!--==================== SIDEBAR ====================-->
@@ -72,136 +93,59 @@
 
     <!--==================== PROJECTS ====================-->
 
-    <div class="portfolio-overview">
-        <div class="band band-light">
-            <div class="column-border">
-                <div class="column column-image">
+    <div class="row g-0">
+        <div class="col-12">
+            <div class="row custom-row">
+                <div class="col-xl-8 col-lg-6 col-md-5 col-sm-12">
+                    <div class="portfolio-project" id="img-01"></div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-7 col-sm-12 custom-text">
+                    <h1 class="portfolio">Title</h1>
+                    <h2 class="portfolio">Subtitle 1</h2>
+                    <div class="col-sm-12 small-scr-img">
+                        <img src="assets/img/grain-gradient-bg.jpg" alt="placeholder">
+                    </div>
+                    <div class="portfolio-ellips">
+                        <p class="portfolio-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                            laboriosam nisi
+                            odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque
+                            doloribus eius, error
+                            esse, quibusdam rem reprehenderit sed tempore.</p>
+                    </div>
+                    <button class="card-button">Read More</button>
                 </div>
             </div>
-            <div class="column column-text">
-                <h1 class="band-text">Title</h1>
-                <h2 class="band-text">Subtitle</h2>
-                <div class="text-ellips">
-                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
-                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
-                        esse, quibusdam rem reprehenderit sed tempore.</p>
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
-                <button class="card-button">Read More</button>
-            </div>
-        </div>
-        <div class="band band-dark">
-            <div class="column column-text">
-                <h1 class="band-text">Title</h1>
-                <h2 class="band-text">Subtitle</h2>
-                <div class="text-ellips">
-                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
-                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
-                        esse, quibusdam rem reprehenderit sed tempore.</p>
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
-                <button class="card-button-reverse">Read More</button>
-            </div>
-            <div class="column-border">
-                <div class="column column-image">
-                </div>
-            </div>
-        </div>
-        <div class="band band-light">
-            <div class="column-border">
-                <div class="column column-image">
-                </div>
-            </div>
-            <div class="column column-text">
-                <h1 class="band-text">Title</h1>
-                <h2 class="band-text">Subtitle</h2>
-                <div class="text-ellips">
-                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
-                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
-                        esse, quibusdam rem reprehenderit sed tempore.</p>
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
-                <button class="card-button">Read More</button>
-            </div>
-        </div>
-        <div class="band band-dark">
-            <div class="column column-text">
-                <h1 class="band-text">Title</h1>
-                <h2 class="band-text">Subtitle</h2>
-                <div class="text-ellips">
-                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
-                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
-                        esse, quibusdam rem reprehenderit sed tempore.</p>
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
-                <button class="card-button-reverse">Read More</button>
-            </div>
-            <div class="column-border">
-                <div class="column column-image">
-                </div>
-            </div>
-        </div>
-        <div class="band band-light">
-            <div class="column-border">
-                <div class="column column-image">
-                </div>
-            </div>
-            <div class="column column-text">
-                <h1 class="band-text">Title</h1>
-                <h2 class="band-text">Subtitle</h2>
-                <div class="text-ellips">
-                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
-                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
-                        esse, quibusdam rem reprehenderit sed tempore.</p>
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
-                <button class="card-button">Read More</button>
-            </div>
-        </div>
-        <div class="band band-dark">
-            <div class="column column-text">
-                <h1 class="band-text">Title</h1>
-                <h2 class="band-text">Subtitle</h2>
-                <div class="text-ellips">
-                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
-                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
-                        esse, quibusdam rem reprehenderit sed tempore.</p>
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
-                <button class="card-button-reverse">Read More</button>
-            </div>
-            <div class="column-border">
-                <div class="column column-image">
-                </div>
-            </div>
-        </div>
-        <div class="band band-light">
-            <div class="column-border">
-                <div class="column column-image">
-                </div>
-            </div>
-            <div class="column column-text">
-                <h1 class="band-text">Title</h1>
-                <h2 class="band-text">Subtitle</h2>
-                <div class="text-ellips">
-                    <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id laboriosam nisi
-                        odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus eius, error
-                        esse, quibusdam rem reprehenderit sed tempore.</p>
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
-                <button class="card-button">Read More</button>
-            </div>
-        </div>
+            <div class="row custom-row">
+                <div class="col-xl-4 col-lg-6 col-md-7 col-sm-12 custom-text">
+                    <h1 class="portfolio">Title</h1>
+                    <h2 class="portfolio">Subtitle 2</h2>
+                    <div class="col-sm-12 small-scr-img">
+                        <img src="assets/img/grain-gradient-bg.jpg" alt="placeholder">
+                    </div>
+                    <div class="portfolio-ellips">
+                        <p class="portfolio-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                            laboriosam nisi
+                            odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque
+                            doloribus eius, error
+                            esse, quibusdam rem reprehenderit sed tempore.</p>
 
+                    </div>
+                    <button class="card-button reverse">Read More</button>
+                </div>
+                <div class="col-xl-8 col-lg-6 col-md-5 col-sm-12">
+                    <div class="portfolio-project" id="img-02"></div>
+                </div>
+            </div>
+            <!-- Repeat the pattern for additional rows -->
+        </div>
     </div>
-
 
 </main>
 
 <!--==================== FOOTER ====================-->
 
 <footer class="footer">
-    <div class="footer__row">
+    <div class="footer__row footer-buttons">
         <div class="footer__button">
             <button class="footer__button__style">All Projects</button>
         </div>
@@ -209,7 +153,7 @@
             <button class="footer__button__style">Experiments</button>
         </div>
     </div>
-    <div class="footer__row">
+    <div class="footer__row footer-icons">
         <a href="#" class="footer__icon">
             <i class="fab fa-youtube"></i>
         </a>

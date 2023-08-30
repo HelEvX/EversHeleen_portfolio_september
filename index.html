@@ -24,22 +24,44 @@
 
 <!--==================== HEADER ====================-->
 
-<header class="header__container">
 
+<header class="header__container">
+    <!--for large screens (default)-->
     <div class="top-banner">
         <div class="header__logo">
             <a href="index.html">
                 <img src="assets/site/mini%20logo.svg" alt="Logo">
             </a>
         </div>
+        <label for="nav-checkbox" class="nav__toggle">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </label>
         <nav class="nav__items">
             <a href="portfolio.html" class="header__button">Portfolio</a>
             <a href="about.html" class="header__button">About</a>
             <a href="blog.html" class="header__button">Blog</a>
             <a href="contact.html" class="header__button">Contact</a>
         </nav>
-        <div class="empty-space"></div>
+        <div class="header__empty-space"></div>
     </div>
+    <!--for flyout sidebar menu-->
+    <input type="checkbox" id="nav-checkbox" class="nav__checkbox">
+    <div id="nav-overlay" class="nav__overlay">
+        <nav class="menu__items">
+            <ul class="menu__list">
+                <li class="menu__item close-icon">
+                    <label for="nav-checkbox">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </label>
+                </li>
+                <li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
 
     <!--==================== SIDEBAR ====================-->
 
@@ -94,7 +116,7 @@
         <!-- IMAGE GRID -->
 
         <div class="row g-0 grid clickable">
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="colored-shape shape-1">
                     <div class="overlay">
                         <div class="overlay-shape"></div>
@@ -103,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="colored-shape shape-2">
                     <div class="overlay">
                         <div class="overlay-shape"></div>
@@ -112,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="colored-shape shape-3">
                     <div class="overlay">
                         <div class="overlay-shape"></div>
@@ -121,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="colored-shape shape-4">
                     <div class="overlay">
                         <div class="overlay-shape"></div>
@@ -130,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="colored-shape shape-5">
                     <div class="overlay">
                         <div class="overlay-shape"></div>
@@ -139,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="colored-shape shape-6">
                     <div class="overlay">
                         <div class="overlay-shape"></div>
@@ -148,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="colored-shape shape-7">
                     <div class="overlay">
                         <div class="overlay-shape"></div>
@@ -157,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-xl-6">
                 <div class="colored-shape shape-8">
                     <div class="overlay">
                         <div class="overlay-shape"></div>
@@ -210,6 +232,45 @@
         </div>
     </section>
 
+    <!-- alternative box layout - smaller screens-->
+
+    <section class="info-box-alt">
+        <section class="section1">
+            <div class="flex-container">
+                <div class="column1">
+                    <img src="assets/img/profile%20pic%20large.jpg" alt="Profile pic - Fest 2021" class="large-image">
+                </div>
+                <div class="column2">
+                    <div class="circle-shapes">
+                        <div class="circle-shape-1-combo">
+                            <div class="circle-shape circle-shape-1"></div>
+                            <div class="circle-shape circle-shape-1-fill"></div>
+                        </div>
+                        <div class="circle-shape-2-combo">
+                            <div class="circle-shape circle-shape-2"></div>
+                            <div class="circle-shape circle-shape-2-fill"></div>
+                        </div>
+                        <div class="circle-shape-3-combo">
+                            <div class="circle-shape circle-shape-3"></div>
+                            <div class="circle-shape circle-shape-3-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-col">
+                    <h2 class="card-title">Hello,</h2>
+                    <p>I'm Heleen. I'm a huge fan of the color burn blending mode, wiggle loops,
+                        distortion maps, luminosity mattes and noisy finishing touches.
+                    </p>
+                    <p>I've had many changes of heart in my pursuit of a career. Even though I'm nearly 40, I like to
+                        think I have the enthusiasm of a fluffy puppy playing with a new toy.
+                    </p>
+                    <p>Wanna join me?</p>
+                    <button class="card-button">Read More</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
 
     <!-- CONTACT BANNER  -->
 
@@ -225,32 +286,32 @@
 
     <!-- CIRCLE BANNER VERSION -->
     <section class="banner">
-            <div class="banner-text">
-                <p class="contact-bottom">Contact</p>
-                <p class="heading contact-top">Contact</p>
-                <p class="mail-button">
-                    <a href="mailto:heleen.evers@student.pxl.be" target="_blank">
-                        <button>heleen.evers<span>@</span>student.pxl.be</button>
-                    </a>
-                </p>
-            </div>
-            <div class="shape-container">
-                <div class="circle circle-1"></div>
-                <div class="circle circle-2"></div>
-                <div class="circle circle-3"></div>
-                <div class="circle circle-4"></div>
-                <div class="circle circle-5"></div>
-                <div class="circle circle-6"></div>
-                <div class="circle circle-7"></div>
-                <div class="circle circle-8"></div>
-                <div class="rectangular-bg"></div>
-            </div>
+        <div class="banner-text">
+            <p class="contact-bottom">Contact</p>
+            <p class="heading contact-top">Contact</p>
+            <p class="mail-button">
+                <a href="mailto:heleen.evers@student.pxl.be" target="_blank">
+                    <button>heleen.evers<span>@</span>student.pxl.be</button>
+                </a>
+            </p>
+        </div>
+        <div class="shape-container">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="circle circle-5"></div>
+            <div class="circle circle-6"></div>
+            <div class="circle circle-7"></div>
+            <div class="circle circle-8"></div>
+            <div class="rectangular-bg"></div>
+        </div>
     </section>
 
     <!--INSTAGRAM GALLERY-->
-    <section class="gallery-container">
+    <section class="gallery">
         <div class="row g-0">
-            <div class="col-sm-2">
+            <div class="col-xl col-lg-6 col-md-12 col-sm-12">
                 <div class="gallery-item">
                     <div class="gallery-icon">
                         <i class="fa-solid fa-photo-film fa-xl"></i>
@@ -264,7 +325,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xl col-lg-6 col-md-6 col-sm-12">
                 <div class="gallery-item">
                     <div class="gallery-icon">
                         <i class="fa-solid fa-photo-film fa-xl"></i>
@@ -278,7 +339,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xl col-lg-4 col-md-6 col-sm-12">
                 <div class="gallery-item">
                     <div class="gallery-icon">
                         <i class="fa-solid fa-photo-film fa-xl"></i>
@@ -292,7 +353,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xl col-lg-4 col-md-6 col-sm-12">
                 <div class="gallery-item">
                     <div class="gallery-icon">
                         <i class="fa-solid fa-photo-film fa-xl"></i>
@@ -306,21 +367,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2">
-                <div class="gallery-item">
-                    <div class="gallery-icon">
-                        <i class="fa-solid fa-photo-film fa-xl"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div class="gallery-text">
-                            <h3>IG Post Title</h3>
-                            <p>The Instagram post description goes here.</p>
-                            <a href="#" class="gallery-link" target="_blank">View on Instagram</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2">
+            <div class="col-xl col-lg-4 col-md-6 col-sm-12">
                 <div class="gallery-item">
                     <div class="gallery-icon">
                         <i class="fa-solid fa-photo-film fa-xl"></i>
@@ -343,7 +390,7 @@
 <!--==================== FOOTER ====================-->
 
 <footer class="footer">
-    <div class="footer__row">
+    <div class="footer__row footer-buttons">
         <div class="footer__button">
             <button class="footer__button__style">All Projects</button>
         </div>
@@ -351,7 +398,7 @@
             <button class="footer__button__style">Experiments</button>
         </div>
     </div>
-    <div class="footer__row">
+    <div class="footer__row footer-icons">
         <a href="#" class="footer__icon">
             <i class="fab fa-youtube"></i>
         </a>
