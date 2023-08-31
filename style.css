@@ -91,8 +91,7 @@ a:hover {
 
 .hero {
     position: relative;
-    /*overflow: hidden;*/
-    margin-top: -50px;
+    width: 100vw;
 }
 
 .hero__gif {
@@ -315,7 +314,9 @@ a:hover {
 
 
 /*========== GRID ==============*/
-
+.container-fluid {
+    padding: 0;
+}
 
 .colored-shape {
     width: 100%;
@@ -472,6 +473,7 @@ a:hover {
 
 .dots-col {
     flex: auto;
+    min-width: 80px;
 }
 
 .circle-col,
@@ -1261,27 +1263,34 @@ aside .cv-button {
 
 /*main*/
 
+/*.card-title {
+    margin-top: 80px;
+    margin-left: 80px;
+}*/
+
 .contact-text {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 80px;
 }
 
 .contact-text-col {
-    padding: 80px 0 0 80px;
-    flex: 2;
+    margin-bottom: 20px;
+    min-width: 400px;
+    flex: 3;
 }
 
 .petri-col {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     position: relative;
-    padding: 80px 100px 0 0;
     flex: 1;
 }
 
 .petri-overlaying-circle {
-    width: 391px;
-    height: 391px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 4px solid #181716;
     position: absolute;
@@ -1289,10 +1298,15 @@ aside .cv-button {
     left: -15px;
 }
 
+.petri-col .overlaying-container img {
+    max-width: 300px;
+    height: auto;
+}
+
 .contact-form {
     width: 100%;
     max-width: 810px;
-    margin: 100px 130px 80px;
+    margin: 80px auto;
 }
 
 .custom-form {
@@ -1437,7 +1451,7 @@ h2.portfolio {
 }
 
 #img-01 {
-    background-image: url('assets/img/grain-gradient-bg.jpg');
+    background-image: url('assets/img/endcard-placeholder.png');
 }
 
 #img-02 {
@@ -1452,15 +1466,20 @@ h2.portfolio {
 /* PROJECT PAGES */
 /*==========================*/
 
+.grid-section img {
+    max-width: 100%;
+}
+
 .portfolio-subtitle {
     display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .portfolio-subtitle h4 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 32px;
     font-weight: 600;
-    margin: 10px auto;
 }
 
 .container-portfolio {
@@ -1481,7 +1500,7 @@ h2.portfolio {
     width: 430px;
 }
 
-.scope {
+.portfolio-aside {
     width: 220px;
 }
 
@@ -1517,7 +1536,7 @@ h2.portfolio {
 /*==============================*/
 /*==============================*/
 
-/*DESKTOP & LAPTOP - LARGE: 1200px and above*/
+/*XL - DESKTOP & LAPTOP*/
 /*default*/
 @media screen and (min-width: 1200px) {
     .nav__toggle,
@@ -1528,7 +1547,7 @@ h2.portfolio {
     }
 }
 
-/*DESKTOP & LAPTOP - MEDIUM*/
+/*LG - DESKTOP & LAPTOP*/
 @media screen and (max-width: 1199px) {
     .top-banner {
         height: 200px;
@@ -1655,13 +1674,41 @@ h2.portfolio {
     }
 
     /**/
+    /*CONTACT PAGE*/
 
+    .container-contact {
+        flex-direction: column-reverse;
+    }
 
+    .contact-text {
+        margin: 40px;
+        padding: 0 40px;
+    }
+
+    .contact-text-col {
+        padding-top: 40px;
+    }
+
+    .contact-aside {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0 40px;
+        margin-top: 40px;
+    }
+
+    .h4-line {
+        display: none;
+    }
+
+    .petri-col {
+        display: none;
+    }
 
 }
 
-/*TABLET LANDSCAPE*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/*MD - TABLET LANDSCAPE*/
+@media screen and (max-width: 991px) {
 
     .hero,
     .title {
@@ -1672,10 +1719,28 @@ h2.portfolio {
         flex-direction: column;
     }
 
+    .container-portfolio {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 
+    .portfolio-aside {
+        margin: 32px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 108px;
+        width: 430px;
+    }
+
+    .container-portfolio h3 {
+        margin-top: 20px;
+    }
 
 }
 
+/*MD and up*/
 @media screen and (min-width: 768px) {
 
     .small-scr-img {
@@ -1684,7 +1749,7 @@ h2.portfolio {
 
 }
 
-/*TABLET PORTRAIT*/
+/*SM - TABLET PORTRAIT*/
 @media screen and (max-width: 767px) {
 
     .footer {
@@ -1705,13 +1770,58 @@ h2.portfolio {
         text-align: start;
     }
 
+    .contact-aside {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 40px auto;
+    }
+
+    .dots-col {
+        display: none;
+    }
+
+
 
 }
 
+/*XS - SMARTPHONE*/
+@media screen and (max-width: 575px) {
+
+    .description {
+        width: 80vw;
+    }
 
 
-/*SMARTPHONE*/
-/*
-@media screen and (max-width: 576px) {
+    /*CONTACT PAGE*/
 
-}*/
+    .contact-aside {
+        flex-direction: column;
+        align-items: end;
+        text-align: end;
+        margin-right: 160px;
+        /*padding: 0 80px;*/
+    }
+
+    .adobe-icons {
+        display: none;
+    }
+
+    .contact-languages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contact-languages img {
+        right: 170px;
+    }
+
+    .contact-text-col {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 0 80px;
+    }
+
+
+}
