@@ -47,7 +47,7 @@ a:hover {
 }
 
 .header__logo,
-.empty-space {
+.header__empty-space {
     width: 60px;
 }
 
@@ -646,11 +646,7 @@ a:hover {
     color: #EC8D32;
     transform: translate(-50%, -50%);
     z-index: 1;
-    text-shadow: /*create outlines*/
-            -2px -2px 0 #F7F3EE, /* Top-left */
-            2px -2px 0 #F7F3EE, /* Top-right */
-            -2px 2px 0 #F7F3EE, /* Bottom-left */
-            2px 2px 0 #F7F3EE; /* Bottom-right */
+    text-shadow: /*create outlines*/ -2px -2px 0 #F7F3EE, /* Top-left */ 2px -2px 0 #F7F3EE, /* Top-right */ -2px 2px 0 #F7F3EE, /* Bottom-left */ 2px 2px 0 #F7F3EE; /* Bottom-right */
 }
 
 .contact-top {
@@ -857,85 +853,101 @@ a:hover {
 /*==========================*/
 
 .section1 .flex-container {
-    max-width: 1800px;
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: start;
+    margin: 0 auto;
 }
 
 .section1 .column1 {
     flex: 1;
+    max-width: 30%;
+}
+
+.image-container {
     position: relative;
 }
 
-.large-image {
-    max-width: 650px;
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 100%;
 }
 
 .text-overlay p {
-    position: absolute;
     color: #F7F3EE;
     font-size: 16px;
     text-align: right;
-    top: 10px;
-    padding: 10px 20px;
+    margin: 0;
+    width: 100%;
 }
 
-/* Column 3 */
-.section1 .column3 {
-    max-width: 600px;
-    margin-top: 80px;
-    margin-right: 200px;
+
+.circle-shapes {
+    flex: auto;
+    max-width: 10%;
 }
 
-.column3 h2 {
-    margin: 0 auto;
+.about-text-column {
+    flex: 1;
 }
 
-.column3 h2 span {
+.article-title {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.article-title span {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
     font-size: 60px;
     color: #181716;
+    padding-left: 20px;
 }
 
 .article-subtitle {
+    display: flex;
+    flex-wrap: wrap;
     font-family: "Legend Exa", sans-serif;
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
     color: #F7F3EE;
     background-color: #EC8D32;
-    padding: 10px 30px;
-    margin-bottom: 40px;
-    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px auto;
 }
 
-.column3 h3 span {
+.article-subtitle span {
     color: #181716;
+    padding-left: 20px;
 }
 
-.column3 p span {
+.about-me-article p {
+    padding-left: 20px;
+}
+
+.about-me-article p span {
     color: #EC8D32;
+}
+
+.about-me-article {
+    padding-right: 200px;
 }
 
 
 /* DOTS ANIMATION */
-
-/* Column 2 */
-.column2 {
-    display: flex;
-    flex: auto;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*.circle-shapes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
 
 .circle-shape-1-combo,
 .circle-shape-2-combo,
@@ -1042,12 +1054,23 @@ a:hover {
 
 .logo-banner {
     display: flex;
-    max-width: 1800px;
+    max-width: 100%;
     width: 100%;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 20px;
 }
+
+.logo-banner .item {
+    margin: 20px;
+}
+
+.logo-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* section 3 what do i do */
 
@@ -1542,9 +1565,11 @@ h2.portfolio {
     .nav__toggle,
     .nav__overlay,
     .nav__checkbox,
-    .info-box-alt {
+    .info-box-alt,
+    .section1 .cv-button {
         display: none;
     }
+
 }
 
 /*LG - DESKTOP & LAPTOP*/
@@ -1577,10 +1602,9 @@ h2.portfolio {
     .nav__checkbox:checked + #nav-overlay {
         right: 0;
     }
+
     /*hamburger menu will be functional with added javascript, see WPL 2*/
-
     /*slide out menu*/
-
     .nav__overlay {
         position: fixed;
         top: 0;
@@ -1640,13 +1664,17 @@ h2.portfolio {
     }
 
     /*================*/
-
     nav {
         display: none;
     }
 
     .main {
-        margin: 200px auto 0;
+        margin: 160px auto 0;
+    }
+
+    /*--------------------------*/
+    .container-fluid {
+        padding: 0 20px;
     }
 
     .info-box {
@@ -1658,8 +1686,6 @@ h2.portfolio {
     }
 
     .info-box-alt img {
-        width: 480px;
-        height: 700px;
         object-fit: cover;
         border: 4px solid #181716;
     }
@@ -1673,9 +1699,16 @@ h2.portfolio {
         color: #F7F3EE;
     }
 
+    .dots-col {
+        flex: 0.5;
+    }
+
+    .column1 {
+        padding-left: 40px;
+    }
+
     /**/
     /*CONTACT PAGE*/
-
     .container-contact {
         flex-direction: column-reverse;
     }
@@ -1705,11 +1738,23 @@ h2.portfolio {
         display: none;
     }
 
+    /**/
+    /*ABOUT PAGE*/
+
+    .text-overlay {
+        display: none;
+    }
+
+
+
+
 }
 
 /*MD - TABLET LANDSCAPE*/
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
+    /**/
+    /*PORTFOLIO PAGE*/
     .hero,
     .title {
         display: none;
@@ -1738,12 +1783,23 @@ h2.portfolio {
         margin-top: 20px;
     }
 
+    /**/
+    /*ABOUT PAGE*/
+
+
 }
 
 /*MD and up*/
 @media screen and (min-width: 768px) {
 
+    /**/
+    /*PORTFOLIO PAGE*/
     .small-scr-img {
+        display: none;
+    }
+
+    .card-title br,
+    .article-subtitle br {
         display: none;
     }
 
@@ -1766,10 +1822,14 @@ h2.portfolio {
         margin: 10px 0;
     }
 
+    /**/
+    /*PORTFOLIO PAGE*/
     .custom-row:nth-child(even) {
         text-align: start;
     }
 
+    /**/
+    /*CONTACT PAGE*/
     .contact-aside {
         display: flex;
         flex-direction: column;
@@ -1781,6 +1841,41 @@ h2.portfolio {
         display: none;
     }
 
+    /**/
+    /*ABOUT PAGE*/
+    .section1 .container-fluid {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text-overlay p {
+        text-align: left;
+    }
+
+    .large-image {
+        max-width: none;
+        height: auto;
+    }
+
+    .about-me-article,
+    .article-subtitle,
+    .article-title {
+        margin-bottom: 40px;
+        padding: 0 30px 0 0;
+    }
+
+    .about-me-article p,
+    .about-me-article li {
+        font-size: 18px;
+    }
+
+    .about-me-article ul {
+        padding-left: 20px; /* Adjust padding for bullet points on mobile */
+    }
+
+    .about-me-article .card-button {
+        margin: 20px auto;
+    }
 
 
 }
@@ -1788,13 +1883,14 @@ h2.portfolio {
 /*XS - SMARTPHONE*/
 @media screen and (max-width: 575px) {
 
+    /**/
+    /*PORTFOLIO PROJECT PAGE*/
     .description {
         width: 80vw;
     }
 
 
     /*CONTACT PAGE*/
-
     .contact-aside {
         flex-direction: column;
         align-items: end;
@@ -1822,6 +1918,8 @@ h2.portfolio {
         margin: 0 auto;
         padding: 0 80px;
     }
+
+
 
 
 }

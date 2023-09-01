@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Werkplekleren: Motivatie, waarden & kernkwadranten</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Josefin+Slab:wght@700&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@500&display=swap"
+          rel="stylesheet">
+    <!--Bootstrap reset-->
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <!--Bootstrap grid-->
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="blog.css">
+    <!-- Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/7118d8a9c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-css/all.css">
+
+</head>
+<body>
+
+<!--==================== HEADER ====================-->
+
+<header class="header__container">
+    <!--for large screens (default)-->
+    <div class="top-banner">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/site/mini%20logo.svg" alt="Logo">
+            </a>
+        </div>
+        <label for="nav-checkbox" class="nav__toggle">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </label>
+        <nav class="nav__items">
+            <a href="portfolio.html" class="header__button">Portfolio</a>
+            <a href="about.html" class="header__button">About</a>
+            <a href="blog.html" class="header__button">Blog</a>
+            <a href="contact.html" class="header__button">Contact</a>
+        </nav>
+        <div class="header__empty-space"></div>
+    </div>
+    <!--for flyout sidebar menu-->
+    <input type="checkbox" id="nav-checkbox" class="nav__checkbox">
+    <div id="nav-overlay" class="nav__overlay">
+        <nav class="menu__items">
+            <ul class="menu__list">
+                <li class="menu__item close-icon">
+                    <label for="nav-checkbox">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </label>
+                </li>
+                <li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--==================== SIDEBAR ====================-->
+
+    <nav>
+        <ul class="nav__socialbar">
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<!--==================== MAIN ====================-->
+
+<main class="main">
+    <div class="blog-nav">
+        <a href="blog.html" class="icon-link">
+            <i class="fa-solid fa-arrow-left fa-xl back-icon"></i>
+        </a>
+        <a href="#" class="icon-link">
+            <i class="fa-solid fa-magnifying-glass fa-xl search-icon"></i>
+        </a>
+    </div>
+
+    <div class="blog-container">
+        <div class="header">
+            <div class="author-info">
+                <div class="profile-picture">
+                    <img src="assets/site/WPL-profile.svg" alt="profile picture">
+                </div>
+                <div class="author-details">
+                    <div class="small-text">Werkplekleren 1</div>
+                    <div class="small-text"><span>•</span> 20 oktober 2022</div>
+                    <div class="small-text"><span>•</span> Individueel</div>
+                </div>
+                <div class="empty-space">
+                    <!--empty for space-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <div class="heading-container">
+                <h1 class="page-title">Motivatie, waarden & kernkwadranten</h1>
+                <div class="line-small"></div>
+            </div>
+        </div>
+        <div class="cover-image">
+            <img src="assets/img/wpl/cover-kernkwadranten.jpg" alt="Kernkwadranten cover image">
+            <!--<p class="caption">Caption for Blog Post Cover Image</p>-->
+        </div>
+        <div class="intro">
+
+        </div>
+        <div>
+            <h2>Inhoudstafel</h2>
+            <div class="table-of-contents">
+                <div class="line-vertical"></div>
+                <ol>
+                    <li><a href="#section1">Vragenlijst</a></li>
+                    <li><a href="#section2">Hoe ontdek ik mijn kernwaarden?</a></li>
+                </ol>
+            </div>
+        </div>
+        <!--<div class="callout">
+                <p>This is a callout section...</p>
+            </div>-->
+        <hr>
+        <div class="content">
+            <h2 id="section1" class="section-target">Vragenlijst</h2>
+
+            <h3>Vraag 1: Welke factoren laten je beginnen aan een activiteit (karwei/taak) op het
+                werk, op school of thuis die zwaar/lastig/saai is?
+            </h3>
+            <p>Je mag kiezen op welk tijdstip van de dag je deze activiteiten/klusjes uitvoert.</p>
+            <h4>Wanneer doe je liever saaie klusjes?</h4>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="1-01">
+                    <label for="1-01">in de ochtend</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1-02">
+                    <label for="1-02">voor de lunch</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1-03">
+                    <label for="1-03">na de lunch</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1-04" checked>
+                    <label for="1-04">tijdens de middag</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1-05">
+                    <label for="1-05">in de avond</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1-06" checked>
+                    <label for="1-06">'s nachts</label>
+                </li>
+            </ul>
+
+            <p>Je mag kiezen met wie je samenwerkt.</p>
+            <h4>Hoe werk je het liefst?</h4>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="2-01" checked>
+                    <label for="2-01">alleen</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="2-02" checked>
+                    <label for="2-02">met één of twee anderen</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="2-03">
+                    <label for="2-03">in een grotere groep</label>
+                </li>
+            </ul>
+
+            <p>Je kan iets verdienen als je de activiteit start en beëindigt of je zou iets
+                kunnen verliezen als je dat niet doet.
+            </p>
+            <h4>Welke van deze winsten of verliezen zouden je het meest kunnen helpen?</h4>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="3-01">
+                    <label for="3-01">materiële of financiële winst</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-02" checked>
+                    <label for="3-02">een kans op eigen ontwikkeling</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-03" checked>
+                    <label for="3-03">een kans op een betere baan/positie</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-04">
+                    <label for="3-04">betere werkomstandigheden</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-05" checked>
+                    <label for="3-05">populariteit</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-06" checked>
+                    <label for="3-06">waardering van andere mensen</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-07" checked>
+                    <label for="3-07">een risico op een werkachterstand</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-08">
+                    <label for="3-08">Het risico om voor een meerdere te moeten staan en uit te leggen
+                        waarom je het werk niet hebt gedaan.
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-09" checked>
+                    <label for="3-09">Andere winsten of verliezen, welke?</label>
+                </li>
+            </ul>
+
+            <div class="callout">
+                <p>De goedkeuring en complimentjes van iemand die ik bewonder en bij wie ik graag op een goed blaadje
+                    wil
+                    staan (kan leidinggevende, collega of zelfs iemand die onder mij staat zijn – als ik bekend wil
+                    staan
+                    als iemand met wie het prettig is om te werken).</p>
+            </div>
+
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="3-10" checked>
+                    <label for="3-10">Het helpt als je zelf verwachtingen hebt over het resultaat?</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-11" checked>
+                    <label for="3-11">Het helpt als je verwachtingen hebt van andere mensen over het
+                        resultaat?
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-12" checked>
+                    <label for="3-12">Het helpt je om een beslissing te nemen en door te gaan, of je nu
+                        gemotiveerd bent of niet?
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-13" checked>
+                    <label for="3-13">Het helpt als je een deadline hebt?</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="3-14" checked>
+                    <label for="3-14">Andere factoren, welke?</label>
+                </li>
+            </ul>
+
+            <div class="callout">
+                <p>Het kan helpen om een eind-tijdstip in plaats van een start-tijdstip voor een taak aan te duiden
+                    (tussen-deadlines), waarbij mijn eigen eind-tijdstip niet samenvalt met de eigenlijke deadline maar
+                    wel betekent dat ik leukere activiteiten (hobby’s, een geplande tv-avond, langer uitslapen…) zal
+                    moeten laten vallen als ik niet op tijd klaar ben.</p>
+                <p>Het helpt ook om mensen op te zoeken die op hetzelfde moment ook een vervelende taak moeten doen,
+                    samen te gaan zitten (online) en af en toe bij elkaar in te checken hoe het gaat. Werkt vooral bij
+                    gemakkelijke maar vervelende taken (niet bij uitdagende taken want dan is er te veel afleiding om te
+                    blijven babbelen).</p>
+            </div>
+
+            <h3>Vraag 2: Welke factoren doen je van gedacht veranderen, ook al had je reeds besloten
+                om te beginnen aan een activiteit/karwei?
+            </h3>
+
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="4-01">
+                    <label for="4-01">onkosten-geldverlies</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="4-02">
+                    <label for="4-02">geen tijd</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="4-03">
+                    <label for="4-03">familiale verplichtingen/verwachtingen</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="4-04" checked>
+                    <label for="4-04">vermoeidheid</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="4-05">
+                    <label for="4-05">slechte gezondheid</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="4-06" checked>
+                    <label for="4-06">te hoge verwachtingen/doelstellingen</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="4-07" checked>
+                    <label for="4-07">geen steun van vrienden of familie</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="4-08" checked>
+                    <label for="4-08">Andere factoren, welke?</label>
+                </li>
+            </ul>
+
+            <div class="callout">
+                <p>Een volgend idee heeft zich al aangediend en ik wil liever daarmee bezig zijn (en zo heb ik er
+                    minstens 12 on the go…)</p>
+                <p>De Wall of Awful: te vaak in het verleden gefaald hebben (subjectief gevoel!) in een gelijkaardige
+                    taak. Starten met de nieuwe taak houdt dan een te groot risico in om dat gevoel opnieuw te ervaren
+                    (het falen door ‘niet te doen’ voelt veel minder erg aan dan het falen door ‘niet goed genoeg
+                    gedaan’.)</p>
+            </div>
+
+            <h3>Vraag 3: Wat zou je ondanks alles toch doen starten?</h3>
+
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="5-01">
+                    <label for="5-01">allerlei bedreigingen</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="5-02" checked>
+                    <label for="5-02">Het voelt uiteindelijk beter om door te gaan met de actie dan nog
+                        langer te wachten.
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="5-03" checked>
+                    <label for="5-03">deadlines</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="5-04" checked>
+                    <label for="5-04">Je weet dat je je geïnspireerd zal voelen als je gewoon begint.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="5-05" checked>
+                    <label for="5-05">Je weet dat je zal veel leren tijdens het proces.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="5-06" checked>
+                    <label for="5-06">invloed van collega's of klanten</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="5-07" checked>
+                    <label for="5-07">Eerdere ervaringen waar je je tevreden over voelde.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="5-08" checked>
+                    <label for="5-08">Andere redenen, welke?</label>
+                </li>
+            </ul>
+
+            <div class="callout">
+                <p>Als ik de taak zelf minder belangrijk vind dan ik eerst had gedacht, kan ik mijn perfectionisme beter
+                    loslaten en wordt het vanzelf veel gemakkelijker om eraan te beginnen werken.</p>
+            </div>
+
+            <h2 id="section2" class="section-target">Hoe ontdek ik mijn kernwaarden?</h2>
+            <h3>Wat maakt me gelukkig en tevreden?</h3>
+            <h4>Terug in Dublin na de Lockdown</h4>
+            <h4>Aankomen in een hostel na een hike</h4>
+            <h4>Complimenten krijgen van iemand die ik bewonder</h4>
+
+            <h3>Wat maakt me trots?</h3>
+            <h4>De titelsequentie mogen maken voor een YouTube sitcom</h4>
+            <h4>Een crowdfunding organiseren voor een speciaal cadeau</h4>
+            <h4>Een eindwerk schrijven op een weekend tijd voor iemand anders</h4>
+
+            <h3>De toplijst van je persoonlijke waarden</h3>
+            <ol>
+                <li>Authenticiteit</li>
+                <li>Vaardigheid</li>
+                <li>Vertrouwen</li>
+                <li>Respect</li>
+                <li>Nieuwsgierigheid</li>
+                <li>Verbondenheid</li>
+            </ol>
+
+            <h3>Kernkwadranten</h3>
+            <p>Ik heb drie kwadranten ingevuld.</p>
+            <div class="kernkwadranten">
+                <div class="square">
+                    <h4>KERNKWALITEIT</h4>
+                    <p>Engagement, betrokkenheid</p>
+                </div>
+                <div class="square">
+                    <h4>VALKUIL</h4>
+                    <p>Dominant, overdonderend, mezelf voorbijlopen, te veel hooi op mijn vork nemen</p>
+                </div>
+                <div class="square">
+                    <h4>ALLERGIE</h4>
+                    <p>Een afwachtende houding aannemen, terugkrabbelen, passiviteit</p>
+                </div>
+                <div class="square">
+                    <h4>UITDAGING</h4>
+                    <p>Ruimte geven, rustmomenten voorzien, doseren, controle loslaten</p>
+                </div>
+            </div>
+            <hr>
+            <div class="kernkwadranten">
+                <div class="square">
+                    <h4>KERNKWALITEIT</h4>
+                    <p>Openhartig, duidelijk, direct en zonder schroom mijn meningen en gevoelens delen</p>
+                </div>
+                <div class="square">
+                    <h4>VALKUIL</h4>
+                    <p>Naïef, te veel van mezelf vrijgeven, gebrek aan nuance, subtiele signalen van anderen niet goed opvangen, mensen schofferen</p>
+                </div>
+                <div class="square">
+                    <h4>ALLERGIE</h4>
+                    <p>Mensen die voortdurend ‘de vrede willen bewaren’ ten koste van waarheid, juistheid en eerlijkheid (genre ‘iedereen kan toch een beetje gelijk hebben’)</p>
+                </div>
+                <div class="square">
+                    <h4>UITDAGING</h4>
+                    <p>Tijd nemen om mensen en situaties in te schatten, en om meningen langs meerdere kanten te bekijken, niet in ‘the heat of the moment’ antwoorden</p>
+                </div>
+            </div>
+            <hr>
+            <div class="kernkwadranten">
+                <div class="square">
+                    <h4>KERNKWALITEIT</h4>
+                    <p>Grondigheid, volledigheid {vanuit nieuwsgierigheid}</p>
+                </div>
+                <div class="square">
+                    <h4>VALKUIL</h4>
+                    <p>Verdrinken in onnodige details, overzicht verliezen, gebrek aan structuur, keuzestress</p>
+                </div>
+                <div class="square">
+                    <h4>ALLERGIE</h4>
+                    <p>Mensen die genoegen nemen met het minimum, die niet dieper willen graven</p>
+                </div>
+                <div class="square">
+                    <h4>UITDAGING</h4>
+                    <p>Vertrekken vanuit de basis, het algemene kader begrijpen vooraleer details op te zoeken, stapje per stapje werken</p>
+                </div>
+            </div>
+
+
+            <!--===========================-->
+            <!--===========================-->
+
+        </div>
+        <!--javascript events voor delen op social media worden in WPL2 toegevoegd-->
+        <div class="social-icons">
+            <a href="https://www.facebook.com">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div class="stats">
+            <div>
+                <p class="small-text">0 </p>
+                <p class="small-text">views</p>
+            </div>
+            <div>
+                <p class="small-text">0 </p>
+                <p class="small-text">comments</p>
+            </div>
+            <div class="empty-space">
+                <!--empty space-->
+            </div>
+            <div class="likes-count">
+                <p class="small-text">0</p>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+    </div>
+    <div class="recent-posts">
+        <h3>Andere opdrachten</h3>
+        <a href="blog.html">
+            <button>Alles bekijken</button>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <a href="#" class="blog-tile">
+                    <div class="blog-cover">
+                        <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+                    </div>
+                    <div class="blog-body">
+                        <div class="tags">
+                            <div>#tag1</div>
+                            <div>#tag2</div>
+                            <div>#tag3</div>
+                        </div>
+                        <div class="tile-author-info">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                            </div>
+                            <div class="tile-author-details">
+                                <p class="smaller-text">Heleen Evers</p>
+                                <p class="smaller-text">3 September 2023 • 5 min</p>
+                            </div>
+                            <div class="empty-space">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h1 class="tile-title">Blog post title</h1>
+                    </div>
+                    <div class="empty-space"></div>
+                    <div class="blog-body">
+                        <div class="text-ellips">
+                            <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                                laboriosam
+                                nisi
+                                odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus
+                                eius,
+                                error
+                                esse, quibusdam rem reprehenderit sed tempore.</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <hr class="orange-line">
+                        <div class="tile-footer">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="likes">
+                                <p>x</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <a href="#" class="blog-tile">
+                    <div class="blog-cover">
+                        <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+                    </div>
+                    <div class="blog-body">
+                        <div class="tags">
+                            <div>#tag1</div>
+                            <div>#tag2</div>
+                            <div>#tag3</div>
+                        </div>
+                        <div class="tile-author-info">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                            </div>
+                            <div class="tile-author-details">
+                                <p class="smaller-text">Heleen Evers</p>
+                                <p class="smaller-text">3 September 2023 • 5 min</p>
+                            </div>
+                            <div class="empty-space">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h1 class="tile-title">Blog post title</h1>
+                    </div>
+                    <div class="empty-space"></div>
+                    <div class="blog-body">
+                        <div class="text-ellips">
+                            <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                                laboriosam
+                                nisi
+                                odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus
+                                eius,
+                                error
+                                esse, quibusdam rem reprehenderit sed tempore.</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <hr class="orange-line">
+                        <div class="tile-footer">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="likes">
+                                <p>x</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <a href="#" class="blog-tile">
+                    <div class="blog-cover">
+                        <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+                    </div>
+                    <div class="blog-body">
+                        <div class="tags">
+                            <div>#tag1</div>
+                            <div>#tag2</div>
+                            <div>#tag3</div>
+                        </div>
+                        <div class="tile-author-info">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                            </div>
+                            <div class="tile-author-details">
+                                <p class="smaller-text">Heleen Evers</p>
+                                <p class="smaller-text">3 September 2023 • 5 min</p>
+                            </div>
+                            <div class="empty-space">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h1 class="tile-title">Blog post title</h1>
+                    </div>
+                    <div class="empty-space"></div>
+                    <div class="blog-body">
+                        <div class="text-ellips">
+                            <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                                laboriosam
+                                nisi
+                                odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus
+                                eius,
+                                error
+                                esse, quibusdam rem reprehenderit sed tempore.</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <hr class="orange-line">
+                        <div class="tile-footer">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="likes">
+                                <p>x</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-xs-12">
+                <a href="#" class="blog-tile">
+                    <div class="blog-cover">
+                        <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+                    </div>
+                    <div class="blog-body">
+                        <div class="tags">
+                            <div>#tag1</div>
+                            <div>#tag2</div>
+                            <div>#tag3</div>
+                        </div>
+                        <div class="tile-author-info">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                            </div>
+                            <div class="tile-author-details">
+                                <p class="smaller-text">Heleen Evers</p>
+                                <p class="smaller-text">3 September 2023 • 5 min</p>
+                            </div>
+                            <div class="empty-space">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h1 class="tile-title">Blog post title</h1>
+                    </div>
+                    <div class="empty-space"></div>
+                    <div class="blog-body">
+                        <div class="text-ellips">
+                            <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                                laboriosam
+                                nisi
+                                odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus
+                                eius,
+                                error
+                                esse, quibusdam rem reprehenderit sed tempore.</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <hr class="orange-line">
+                        <div class="tile-footer">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="likes">
+                                <p>x</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments">
+        <p>Comments</p>
+        <hr>
+        <div class="comments-box">
+            <p><i class="fa-solid fa-comment-slash fa-xl"></i> Commenting has been turned off.</p>
+        </div>
+    </div>
+
+</main>
+
+<!--==================== FOOTER ====================-->
+
+<footer class="footer">
+    <div class="footer__row footer-buttons">
+        <div class="footer__button">
+            <button class="footer__button__style">All Projects</button>
+        </div>
+        <div class="footer__button">
+            <button class="footer__button__style">Experiments</button>
+        </div>
+    </div>
+    <div class="footer__row footer-icons">
+        <a href="#" class="footer__icon">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-behance"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-vimeo-v"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    <div class="footer__row">
+        <p class="footer__copyright">Created by Heleen Evers</p>
+    </div>
+</footer>
+
+</body>
+</html>
