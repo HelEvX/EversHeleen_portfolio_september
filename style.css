@@ -211,6 +211,34 @@ a:hover {
     color: #181716;
 }
 
+
+
+/*==============================*/
+/*==========SCROLL==============*/
+/*==============================*/
+
+.scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #181716;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #FFA53F;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 100;
+}
+
+.scroll-up-button:hover {
+    background-color: #FFA53F;
+    color: #181716;
+}
+
+
 /* FOOTER */
 /*=========*/
 
@@ -332,8 +360,8 @@ a:hover {
 }
 
 .shape-1 {
-    background-color: #602F00;
-    /*background-image: url('path-to-gif/shape1.gif');*/
+    /*background-color: #602F00;*/
+    background-image: url('assets/img/endcard-placeholder.png');
 }
 
 .shape-2 {

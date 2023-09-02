@@ -327,6 +327,7 @@ h4 {
     font-family: 'Lexend Exa', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    text-transform: uppercase;
     color: #EC8D32;
 }
 
@@ -475,14 +476,14 @@ hr {
     background-color: #181716;
     border: none;
     opacity: 1;
+}
+
+.blog-container hr {
     margin: 40px 160px;
 }
 
 hr.orange-line {
-    height: 2px;
     background-color: #EC8D32;
-    border: none;
-    opacity: 1;
 }
 
 .recent-posts {
@@ -508,17 +509,8 @@ button {
 
 /* blog tiles */
 
-/*.blog-tiles-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.blog-tiles-container {
     margin-bottom: 80px;
-}*/ /*changed to bootstrap grid*/
-
-.container {
-    padding: 0;
 }
 
 a.blog-tile {
@@ -527,8 +519,6 @@ a.blog-tile {
 }
 
 .blog-tile {
-    /*width: 345px;
-    height: 560px;*/
     display: flex;
     flex-direction: column;
     border: 2px solid #181716;
@@ -545,14 +535,12 @@ a.blog-tile {
 }
 
 .blog-cover {
-    width: 100%;
-    height: 200px;
     overflow: hidden;
 }
 
 .blog-cover img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -732,8 +720,10 @@ table.vacatures {
     display: block;
 }
 
-ul li span {
-    font-weight: 600;
+ul li span,
+p span {
+    font-weight: 400;
+    font-style: italic;
     color: #EC8D32;
 }
 
@@ -773,7 +763,111 @@ ul li span {
     text-align: left;
 }
 
+.postits {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.postits th,
+.postits td {
+    border: 2px solid #181716;
+    padding: 8px;
+    text-align: left;
+}
+
+.postits th {
+    background-color: #EC8D32;
+    color: #F7F3EE;
+}
+
+.postits td:first-child,
+.postits th:first-child {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* UI model cirkels */
+
+
+.circle-container {
+    transform: translateX(50%);
+    margin-top: 160px;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.circle1 {
+    background-color: #383530;
+    width: 350px;
+    height: 350px;
+}
+.circle2 {
+    background-color: #602F00;
+    width: 300px;
+    height: 300px;
+}
+.circle3 {
+    background-color: #B7370E;
+    width: 250px;
+    height: 250px;
+}
+.circle4 {
+    background-color: #d25c30;
+    width: 200px;
+    height: 200px;
+}
+.circle5 {
+    background-color: #EC8D32;
+    width: 150px;
+    height: 150px;
+}
+.circle6 {
+    background-color: #ffb763;
+    width: 100px;
+    height: 100px;
+}
+.circle7 {
+    background-color: #F7F3EE;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
 /*==============================*/
+/*==========SCROLL==============*/
+/*==============================*/
+
+.scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #181716;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #FFA53F;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 100;
+}
+
+.scroll-up-button:hover {
+    background-color: #FFA53F;
+    color: #181716;
+}
+
 /*==============================*/
 /*======= RESPONSIVITEIT =======*/
 /*==============================*/

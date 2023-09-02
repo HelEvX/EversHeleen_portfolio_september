@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Werkplekleren: Reflectie Seminaries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Josefin+Slab:wght@700&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@500&display=swap"
+          rel="stylesheet">
+    <!--Bootstrap reset-->
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <!--Bootstrap grid-->
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="blog.css">
+    <!-- Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/7118d8a9c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-css/all.css">
+
+</head>
+<body>
+
+<!--==================== HEADER ====================-->
+
+<header class="header__container">
+    <!--for large screens (default)-->
+    <div class="top-banner">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/site/mini%20logo.svg" alt="Logo">
+            </a>
+        </div>
+        <label for="nav-checkbox" class="nav__toggle">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </label>
+        <nav class="nav__items">
+            <a href="portfolio.html" class="header__button">Portfolio</a>
+            <a href="about.html" class="header__button">About</a>
+            <a href="blog.html" class="header__button">Blog</a>
+            <a href="contact.html" class="header__button">Contact</a>
+        </nav>
+        <div class="header__empty-space"></div>
+    </div>
+    <!--for flyout sidebar menu-->
+    <input type="checkbox" id="nav-checkbox" class="nav__checkbox">
+    <div id="nav-overlay" class="nav__overlay">
+        <nav class="menu__items">
+            <ul class="menu__list">
+                <li class="menu__item close-icon">
+                    <label for="nav-checkbox">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </label>
+                </li>
+                <li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--==================== SIDEBAR ====================-->
+
+    <nav>
+        <ul class="nav__socialbar">
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--==================== SCROLL UP ====================-->
+    <!-- Scroll-up button -->
+    <a href="#" class="nav__socialbar__item scroll-up-button">
+        <i class="fa-solid fa-arrow-up fa-xl"></i>
+    </a>
+
+</header>
+
+<!--==================== MAIN ====================-->
+
+<main class="main">
+    <div class="blog-nav">
+        <a href="blog.html" class="icon-link">
+            <i class="fa-solid fa-arrow-left fa-xl back-icon"></i>
+        </a>
+        <a href="#" class="icon-link">
+            <i class="fa-solid fa-magnifying-glass fa-xl search-icon"></i>
+        </a>
+    </div>
+
+    <div class="blog-container">
+        <div class="header">
+            <div class="author-info">
+                <div class="profile-picture">
+                    <img src="assets/site/WPL-profile.jpg" alt="profile picture">
+                </div>
+                <div class="author-details">
+                    <div class="small-text">Werkplekleren 1: Werkveldverkenning</div>
+                    <div class="small-text"><span>•</span> 6 november 2022</div>
+                    <div class="small-text"><span>•</span> Individueel</div>
+                </div>
+                <div class="empty-space">
+                    <!--empty for space-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <div class="heading-container">
+                <h1 class="page-title">Reflectie Seminaries</h1>
+                <div class="line-small"></div>
+            </div>
+        </div>
+        <div class="cover-image">
+            <img src="assets/img/wpl/cover-seminaries.jpg" alt="Reflectie Seminaries cover image">
+            <!--<p class="caption">Caption for Blog Post Cover Image</p>-->
+        </div>
+        <div class="intro">
+            <h2>Opdracht:</h2>
+            <p>Schrijf een reflectie over wat je hebt geleerd uit de seminaries van de drie verschillende gastsprekers
+                en hun bedrijven.</p>
+            <p>Stel jezelf tijdens het schrijven van deze reflectie onderstaande vragen:</p>
+            <ul>
+                <li>Welke vragen had je voorbereid voor de gastsprekers? Heb je tijdens de seminaries een antwoord
+                    gekregen op één of meerdere van je vragen? Indien ja, op welke en leg uit.
+                </li>
+                <li>Welk bedrijf of welke jobfunctie sprak je het meeste aan? Waarom?</li>
+                <li>Heb je, via de gastsprekers, een beter beeld gekregen van het professionele werkveld van een
+                    grafisch vormgever en/of front-end developer? Leg uit.
+                </li>
+                <li>Hoe is je beeld tegenover het bedrijfsleven en de verschillende jobfuncties veranderd na deze
+                    seminaries? Welke zaken wist je al en werden bevestigd? (Bvb. jobinhoud, manier van werken,
+                    hiërarchie, takenpakket, ...)
+                </li>
+                <li>Zou je in een van deze bedrijven willen solliciteren? Indien ja, welke? Indien nee, waarom niet?
+                </li>
+            </ul>
+        </div>
+        <!--<div class="callout">
+                <p>This is a callout section...</p>
+            </div>-->
+        <hr>
+        <div class="content">
+            <h2 id="section1" class="section-target">Inleiding</h2>
+            <p>Ik heb een 4/5<sup>de</sup> job in de horeca, een sector die mij eigenlijk niet ligt en waarmee ik weinig
+                affiniteit heb, maar die mij in staat stelt om te blijven zoeken naar wat wel waarde heeft voor mij. Zo
+                kwam ik ook terecht in deze opleiding.</p>
+            <p>In 2021 kreeg ik onverwacht een e-mail van een videographer met een eigen mediabedrijf. Hij zocht een
+                videomonteur en nodigde mij uit om mijn C.V. en portfolio door te sturen. Ik kreeg op basis daarvan een
+                proefopdracht, die voldoende geslaagd was voor een gesprek (via Zoom). Daarna hoorde ik niets meer van
+                hem.</p>
+            <p>Mijn streefdoel is om vaardigheden te ontwikkelen die mijn specifieke interesse in video en motion
+                graphics goed omkadert, zodat ik een meer overtuigende skillset kan aanbieden bij mijn volgende
+                sollicitatie. Ik koos voor een graduaatsopleiding (en niet zomaar een cursus bij Syntra) om het werkveld
+                te leren kennen via een boeiende stageplek waar ik me ‘op mijn plaats’ voel. </p>
+
+            <hr>
+
+            <h2 id="section2" class="section-target">Seminaries</h2>
+            <h3>Mijn voorbereiding</h3>
+            <p>Ik heb voor elk seminarie de website van de gastsprekers bezocht en op basis van mijn eerste indrukken
+                mezelf al enkele vragen gesteld. Ik ben best in staat om spontaan vragen te bedenken op basis van wat er
+                ter plekke wordt verteld (en dit is niet mijn eerste seminarie natuurlijk). </p>
+            <p>Ik ben eigenlijk volstrekt onbekend ben met de dagelijkse invulling van de job van Web Developer, dus in
+                feite was mijn eerste vraag voor beide sprekers ‘Hoe ziet een werkweek er voor u precies uit’, of nog
+                eenvoudiger: ‘wat doet u nu precies’. Dat was nog vooraleer ik de websites had bezocht. Het antwoord op
+                die vraag was natuurlijk de main topic van de uiteenzettingen, wat ik wel had verondersteld.</p>
+            <p>Mijn bezoek aan de websites heeft mij verrast in zekere zin. Ik werd er niet meteen wijzer door, maar het
+                was een plezierig verdwalen met veel prikkels. Concrete vragen bedenken vond ik moeilijker worden
+                naarmate ik verder bladerde, met de taglines en ‘ad speak’ kwam ik niet veel verder. Pas toen ik aankwam
+                bij de cases kreeg ik een helder beeld van wat deze developers kunnen betekenen voor een bedrijf. </p>
+            <p>Voor <span>Made</span> bedacht ik me dat hun refilling station design nogal ableist lijkt te zijn, ik vraag me af hoe
+                gemakkelijk een rolstoelgebruiker de pompjes kan bedienen… maar ik vond die vraag veel te scherp en
+                nitpicky om te stellen. Van hun product QuaQua wilde ik gewoon graag een demonstratie zien, want ik heb
+                vorig jaar een Irish Sign Language Interpreter mogen interviewen voor een persoonlijk project en via hem
+                ben ik geïnteresseerd geraakt in live dubbing en interpretatie van videomateriaal. De tech achter dit
+                soort projecten lijkt me interessant maar ik zie mezelf niet snel in dit vakgebied terechtkomen. Een
+                brede vraag die ik bedacht terwijl ik doorheen de rest van de projecten klikte was: hoeveel tijd en
+                resources krijg je om de branche van de klant te onderzoeken, nog voordat je begint met de analyse van
+                de eigenlijke probleemstelling? En hoe bepaal je of je genoeg achtergrondkennis hebt om aan je
+                productontwikkeling te beginnen? Ben je best een generalist of net een specialist, of bestaat er voor u
+                iets tussenin? </p>
+            <p>Via die bedenkingen (ik heb trouwens zelf niet eens beslist welke van de twee ik ben, als dat al relevant
+                is) kwam ik aan bij een ethische kwestie: wat als je je niet kan vinden in de filosofie van het bedrijf
+                of het product van een nieuwe klant? Heb je op basis van botsende waarden al eens een project geweigerd
+                of stopgezet? Uiteindelijk trok ik de vraag helemaal open en noteerde ik: kan u een voorbeeld geven van
+                een situatie waarin u een project moest afblazen, om welk soort redenen ging dat en wat was het effect
+                voor u en uw team?</p>
+            <p>Het ontsnapte me niet dat mijn vragen allemaal nogal kritisch waren opgesteld, alsof ik per sé de
+                moeilijkste facetten van hun werk wilde kennen. Alsof ik wantrouwig sta ten opzichte van een job met
+                uitstraling. Ik had een meer opbouwende insteek nodig en na wat denkwerk kwam ik uit bij een vraag over
+                teamwerk in een creative job: is er een bepaalde taktiek die jullie gebruiken om een team samen te
+                stellen om optimale creativiteit en productiviteit mogelijk te maken? Ik vond die vraag relevant omdat
+                projecten tijdsgebonden zijn terwijl het werk – zeker in de brainstormfase – om veel creativiteit en
+                out-of-the-box thinking vraagt. Ik weet dat veel bedrijven werken met psychosociale tools zoals type
+                indicators om zogenaamde ‘ideale teams’ samen te stellen. Valt dat mee om een bepaald type project aan
+                een bepaald type persoon (of duo, of team) toe te wijzen, of is het meestal een hele puzzel om de juiste
+                mensen op de juiste plek te krijgen?</p>
+            <p>Intussen was ik tot onderaan de website van <span>haveitmade</span> beland, bij hun lijst van diensten (‘Excite,
+                Change & Deliver’) die voor mij nog steeds jargon zijn aangezien ik nog maar net mijn eerste stappen zet
+                in webdesign. ‘Design sprints’ intrigeerde me het meest, maar ik vond het lastig om een betere vraag te
+                verzinnen dan ‘wat is dat precies?’ – en opnieuw kwam het onderwerp al aan bod tijdens het
+                seminarie.</p>
+            <p>Na het bekijken van de cases begon ik me af te vragen of er in dit bedrijf wel vraag is naar graduaten.
+                Kunnen wij na twee jaartjes studeren meedraaien met de verzameling industrieel ingenieurs, graphic
+                artists, business wizards, … die hier toch duidelijk aan de slag zijn?</p>
+            <p><span>Wieni</span> gaf mij een minder overweldigende indruk, vriendelijker in zekere zin (of alleszins minder strak en
+                industrieel). En een fijnere leeservaring. Ik voelde me al meer op mijn gemakt bij het browsen, maar
+                mijn vragen waren eigenlijk dezelfde: hoe puzzel je een team in elkaar, hoe ziet je dag eruit, wat
+                gebeurt er wanneer je je mispakt in een project of een klant? Ik bezocht de ‘how we work’ tab uit
+                nieuwsgierigheid en ik vond hun versie van de diamantstructuur (die we net in de les branding gezien
+                hadden) erg pakkend en leuk. Keek ik dan verder naar ‘careers’, bleken ze net op zoek naar disciplines
+                binnen digital design waar ik net het minste van afweet. Misschien geeft de lezing mij wel een boost om
+                meer en dieper in UI/UX design te duiken?</p>
+            <p>Een week later was het de beurt aan <span>Make It Fly</span>. Een website in het Nederlands, dat gaf meteen een heel
+                andere indruk. Netjes, rechtlijnig, maar ook minder prikkelend. Ik werd door de website weinig
+                geprikkeld om vragen te bedenken. De vacaturepagina bracht me allerminst op andere ideeën: dit is niet
+                het type job dat mij op dit moment kan boeien. De samenloop van omstandigheden (ik kwam die ochtend
+                recht van de luchthaven) heeft mij weerhouden om dit keer een vraag te stellen. Als de motivatie er niet
+                is, kan ik er geen toveren.</p>
+
+            <h3>De bedrijven en jobfuncties</h3>
+            <p>Wat mij het meeste aansprak was de manier waarop er kan en mag gewerkt worden aan projecten. Craig
+                vertelde dat je bij <span>Made</span> de kans krijgt om je te verdiepen in onderwerpen die je interesseren, met de
+                nadruk op ‘diep inwerken’. Die stijl van werken – op korte tijd over een bepaald onderwerp eventjes
+                specialist worden, om voor een volgend project weer te switchen naar iets totaal anders – past heel goed
+                bij mij. Dat er in een team meerdere experten bij elkaar zitten, elk met hun eigen invalshoek en
+                accenten, zou een plezier zijn om deel van uit te maken. Ook dat je nooit alleen staat maar in kleine
+                teams, dat je altijd een klankbord hebt en ideeën kan aftoetsen, elkaar kan ondersteunen, … het klinkt
+                allemaal fantastisch, als het klikt natuurlijk. </p>
+            <p>Jelle van <span>Wieni</span> was het meest duidelijk over de verschillende fases die een project moet doorlopen, met
+                een zwaar accent op valideren en testen met focusgroepen uit het doelpubliek. Academisch onderzoek is
+                mij niet vreemd en hoewel ik van marketing zelf weinig afweet, prikkelde het idee van onderzoek doen en
+                designs testen mijn interesse wel. Voor <span>Made</span> vond ik het moeilijker om het takenpakket voor iemand die
+                vanuit Digital Design bij hen terecht komt, helder te krijgen. Dat komt omdat UI/UX nog te nieuw is voor
+                mij, ik ben ook in de lessen nog de weg aan het zoeken naar wat precies de bedoeling is. Craig startte
+                zijn seminarie met een verwijzing naar Web 3.0, en ik moet toegeven dat ik in termen als de Metaverse en
+                NFT’s al wat verloren loop. Ik heb er notie van, maar ik kan er nog niet vlot over meespreken of een
+                visie over formuleren. Gemakkelijker te volgen was zijn toelichting over de tastbare producten die ik al
+                kende van de website, maar daar stelde ik me dan weer de vraag wat ik met mijn skills (in ontwikkeling)
+                zou kunnen betekenen in zijn bedrijf.</p>
+            <p>Ik vond het treffend en grappig dat de sprekers elk op hun manier benadrukten dat een product in het
+                domein van web design op cruciale momenten gewoon moet wérken (de parallel met pretparken door Jelle
+                blijft zeker hangen), dat een website niet dient om er mooi uit te zien voor de klant maar dat ze er
+                iets aan moet kunnen verdienen. Het was prettig om te horen dat er regelmatig terug naar de drawing
+                board wordt gegaan als blijkt dat er foute veronderstellingen in het design gekropen zijn. Ik apprecieer
+                ook dat een expert terzake de klant durft aan te spreken als je kan aantonen dat diens wensen niet
+                voldoende effect zouden hebben. Kwaliteit leveren of loslaten dus, als dat niet anders kan. Projecten
+                kunnen doodgaan, zei Jelle ook nog, en dat is pijnlijk voor de designer in kwestie. Het is maar goed dat
+                we dit heel vroeg in de opleiding horen, zou ik zeggen.</p>
+            <p>Jelle somde een aantal taken of stappen op die ze bij <span>Wieni</span> doen zonder dat de klant daar specifiek om
+                vraagt, omdat ze weten dat dit noodzakelijk is om een degelijk product af te leveren, bijvoorbeeld een
+                test rond de distributie van content (vindbaarheid via Google Search). Als experts in hun vak weten ze
+                dat dit van belang is voor de klant, al is die zich daar zelf misschien niet van bewust. Dat is ook deel
+                van de service die je als web developer biedt.</p>
+            <p>Wat Yves vertelde over ‘in bad gaan met de klant’ zoals ze dat zien bij <span>Make It Fly</span>, vond ik bemoedigend
+                om te horen. Het slagen van een project mag niet enkel op de schouders rusten van het design team, een
+                extern bedrijf van creatives en technici die je als klant inhuurt om voor jou een geweldige (en
+                winstmakende) oplossing te bedenken. Het is niet voldoende dat de klant om de paar weken even langskomt
+                voor een pitch of een demo en na een paar zinnen commentaar weer vertrekt. Ik heb een slechte ervaring
+                als cursist videografie, toen mijn first cut van een promotiereel voor een opvangcentrum van Fedasil
+                werd afgeschoten door de klant, de manager van dat centrum die zelf vaak in beeld kwam. De twee andere
+                sprekers denken daar hetzelfde over, dat bleek ook uit hun verhalen.</p>
+            <p>Oplossingen creëren voor de lange termijn (‘wij maken uw laatste website’, in de woorden van <span>Wieni</span>), is
+                een mooie belofte. We zijn het tegenwoordig niet gewoon dat dingen (apparaten of apps) gemaakt worden om
+                mee te gaan, integendeel: van sommige technologische snufjes weten we dat er een soort tijdbom in wordt
+                gestoken, net op tijd voor de verwachte nieuwe releases. De drijfveer om een meerwaarde te zijn voor je
+                klanten omdat je gelooft in je product, je skills (en die van je team natuurlijk) en in het bedrijf die
+                er de vruchten van gaat plukken, maakt van elk project overduidelijk een lonende ervaring.</p>
+
+            <h3>Beeld van het werkveld en bedrijfsleven</h3>
+            <p>De drie sprekers leken me een nogal gelijkaardige manier van werken te tonen. Projectgericht, teamwork,
+                expertise samenbrengen, brainstormen, … met veel menselijkheid en creativiteit. Het ziet er erg vrolijk
+                en voldoenend uit. En ik twijfel er ook niet aan dat het geweldig moet zijn om voor zo’n bedrijf vol
+                creatieve go-getters te werken. Wanneer Yves van <span>Make It Fly</span> het dan had over de War for Talent, of
+                Craig over zijn team van experts, dan begin ik al te twijfelen over of ik die hoge lat wel haal.</p>
+            <p>Toch denk ik dat het beeld van de wereld van UI/UX, webdesign en development door deze seminaries niet
+                helemaal compleet is. Ik vraag me af hoe het eraan toe gaat in bedrijven met een heel andere
+                bedrijfscultuur (strakker, droger?), of waar digital design slechts een onderdeel is van het aanbod. Ik
+                denk dan aan in-house designers en developers die voor een groot bedrijf in een totaal andere sector
+                werken, voor hen een huisstijl ontwerpen of bewaken, de website coderen en beheren, op een visuele
+                manier het verhaal van het bedrijf naar buiten brengen en de interne communicatie ondersteunen, dat
+                soort dingen.</p>
+            <p>Het werk van de grafische vormgever zoals ik dat ken of me dat voorstel, kwam niet meteen aan bod in deze
+                seminaries. Online training platformen zoals <a href="https://www.schoolofmotion.com/courses/the-path-to-mograph" target="_blank">School of Motion</a> geven kijkers al eens docu-style een
+                rondleiding bij design studios waar animators, webdesigners en andere grafische artiesten samenwerken
+                aan commerciële projecten. Dat niveau van grafisch ontwerp is misschien ook niet weggelegd voor een
+                afgestudeerde van de graduaatsopleiding, anders zou er geen Bachelor of Arts hoeven bestaan, dat
+                realiseer ik me wel. </p>
+            <p>De gekozen gastsprekers representeerden in mijn ogen een hypermodern bedrijfsleven op maat van de jonge
+                generatie: flashy, quirky, cool. En voor mij wat intimiderend, hoewel ik absoluut niet gekant ben tegen
+                een bruisende, energieke sfeer op mijn werk. Ik ben het alleen niet gewoon. Mij wordt voortdurend
+                verteld dat ik me moet leren intomen (op mijn werk in de horeca, maar ook tijdens stages van vorige
+                opleidingen in ziekenhuizen, labo’s, scholen,… ), dus ik vermoed dat ik nood heb aan een omgeving me
+                veel rust en structuur. Over structuur werd door alle sprekers wel iets gezegd, bijvoorbeeld hoe de
+                ‘sprints’ bij <span>Made</span> in elkaar zitten, welke fases worden doorlopen om tot een eerste demo te komen en wat
+                er daarna volgt, afhankelijk van de feedback van de klant. Ook dat er gewerkt wordt met harde en
+                tussendeadlines, dat er verantwoording moet worden afgelegd bij het team (zoals de stand ups bij <span>Wieni</span>).
+                Toch kwam het nog te chaotisch over voor mij, ik moet het reilen en zeilen misschien gewoon eens in het
+                echt zien om er een duidelijk beeld van te krijgen?</p>
+            <p>Wat ik al wist over het bedrijfsleven, dat was niet zo veel. Dat er projectmatig wordt gewerkt in teams
+                voor externe klanten was in grote lijnen wat ik verwachtte. Projectwerk ken ik vanop afstand, ik heb
+                hier en daar iets opgepikt als stagiaire laborant in meetings van het team voor quality control in de
+                voedingsindustrie. Maar in de creatieve sector is dat toch nog heel anders. Ook stond ik ooit op de set
+                van een studentenkortfilm, maar dat heeft dan weer niets te maken met de bedrijfswereld, zelfs niet met
+                geld verdienen. De manier van werken die tijdens de seminaries werd getoond (met veel enthusiasme en
+                speelsheid) is erg aantrekkelijk en in bepaalde opzichten verrassend. Eén dag per week op kantoor weg
+                van de laptop werken en stand up sessies (bij <span>Wieni</span>)? Het concept ‘sprints’ was totaal nieuw voor mij,
+                maar alle drie de sprekers hadden het er uitgebreid over, en ik besef nu dat ik dit concept nog
+                voortdurend ga tegenkomen in de bedrijfswereld als digital designer. De projectfases werden ludiek maar
+                duidelijk uitgelegd door Yves van <span>Make It Fly</span>, met startschotten, voortrajecten, harde deadlines… en
+                pauzeknoppen. Het is een opluchting dat ook creativelingen een heldere, zelfs een enigszins rigide
+                structuur durven doorduwen en dat hun team dat kan aanhouden. </p>
+            <p>Het is goed om weten dat het begrip ‘expert’ zoals het door de sprekers werd gebruikt, niet noodzakelijk
+                verbonden is met de niveaus van junior, medior of senior. Een expert is iemand die zich in één bepaald
+                concept heeft verdiept en die kennis meebrengt naar het team dat zich aan een project gaat binden waar
+                die expertise van belang is. Zo zie ik het toch, en ik hoop dat dat juist is, want ik kan me daar
+                helemaal in vinden. Yves had het over een ‘rugzak’, en dat iedereen die geselecteerd wordt voor één van
+                de <span>Make It Fly</span> projectteams beschikt over de juiste toolset, maar dat de rugzak kan worden uitgebreid
+                waar nodig. Maar dan merkte Craig op dat designers soms vergeten dat de klant eigenlijk de expert
+                terzake is, want zij is degene die in een bepaalde business zit, niet de designer. De moeite waard om
+                over na te denken. En bij <span>Make It Fly</span> worden de demo’s gegeven door anderen binnen het team, niet door
+                de projectmanagers, dat is fantastisch toch!</p>
+            <p>De ‘Innovation Diamond’ was net gezien in de lessen branding, toen nieuw voor mij en nog niet helemaal
+                verwerkt, dus dat was fijn om in een andere versie aan bod te zien komen. Ik herinner me de ‘open and
+                closed modes’ in creatieve projectontwikkeling uit een beroemde lezing van de John Cleese training
+                company, dit is in feite hetzelfde: je moet weten in welke fase je kan brainstormen voor nieuwe ideeën,
+                en wanneer je beslissingen moet nemen. Dat aftoetsen bij de klant én aan de mark is cruciaal, want je
+                riskeert werk te moeten weggooien – werk waar je je als creatieve geest aan hebt gehecht! Ik was
+                trouwens opgelucht dat alle sprekers benadrukten dat het tijd kost om ingewerkt te raken in een project.
+                Een eindsprint naar de finish line hoort erbij, maar ik wil me niet gehaast voelen in de brainstormfase
+                van een nieuw project, ik moet mezelf de tijd gunnen om wegwijs te raken. Zoals Cleese dat uitlegt, heb
+                je 5 zaken nodig: ruimte, tijd, tijd (nogmaals), zelfvertrouwen, en humor. Al die zaken kwamen terug in
+                de seminaries: fijn toch! Ook tof was de boekentip van Jelle: Creativity Inc. (over Pixar). </p>
+            <p>Een mix van synchroon en asynchroon werken klonk eerst heel abstract. Ik weet niet wat ik moet denken van
+                die ‘play dates’ bij <span>Wieni</span> (werken bij elkaar thuis) en retreats, ik heb soms al moeite met in de juiste
+                mindset te geraken voor een eenvoudige jaarlijkse team building avond. Gastsprekers die worden
+                uitgenodigd op het werk om inspiratie op te doen, dat is dan weer helemaal mijn ding. Er wordt door alle
+                voorgestelde bedrijven veel belang gehecht aan het opvolgen van teamleden om ervoor te zorgen dat ze via
+                de projecten kunnen werken aan hun professionele doelen, ik hoop oprecht dat ik nooit op een werkplek
+                beland waar mijn leidinggevenden daar niet om geven. </p>
+            <p>Ik noteerde tijdens de vragenronde van Craig een opmerking van hem over T-shaped thinking, waarbij hij
+                het had over het gevaar focus te missen als je jezelf te dun uitspreidt. Ik voelde me al direct
+                aangesproken, dus heb ik me voorgenomen om dat concept verder te onderzoeken en te kijken welke
+                inzichten ik er voor mezelf kan uithalen (want te veel willen doen en vergeten mijn energie te doseren
+                is een enorme valkuil voor mij).</p>
+            <p>Elke van de drie bedrijven doet zijn werk met een set basisprincipes of waardes als fundering. Dat kennen
+                we van de lessen (personal) branding, maar het is – opnieuw – fijn om het in werking te zien, om te
+                horen dat een bedrijf daar ook écht over nadenkt voor zijn dagdagelijks functioneren.</p>
+
+            <h3>De vragenronde</h3>
+            <p><span>Made</span> kreeg van mij de vraag hoe ze moeilijke (functionerings-)gesprekken aanpakken. Als je niet voldoende
+                presteert voor een project waar je wekenlang je creativiteit op los laat, moet dat toch enorm
+                demotiverend zijn? Ik had het over de juniors op de werkvloer maar Craig corrigeerde me meteen met te
+                zeggen dat iedereen wordt aangesproken op zijn functioneren, ook seniors. Ik vond zijn visie op feedback
+                heel motiverend (leuke boekentip ook voor Radical Candor van Kim Scott), namelijk dat er in zo’n gesprek
+                wordt uitgegaan van het talent en het perspectief van de persoon in kwestie, dat het gesprek in twee
+                richtingen verloopt en dat ze op zoek gaan naar achterliggende redenen waarom iets niet werkt of niet
+                klikt. Dat kan alleen als zo’n gesprek goed wordt voorbereid. Er worden concrete vragen gesteld: waarom
+                was het design niet goed? Welke stappen zijn mogelijk om dat te verbeteren? Ze kijken daarbij ook naar
+                het opgestelde ‘groeiplan’, wat ik al een heel mooi concept vind. Je stelt daarin je doelen op voor je
+                carrière bij <span>Made</span>, of in het algemeen. Daaruit haal je je motivatie om elk project aan te pakken. Hij
+                gaf als voorbeeld ‘een goede designer worden’, dat lijkt me wel wat algemeen, maar ik kon me wel al een
+                beeld vormen van hoe ik mijn groeiplan als creative zou beginnen opstellen: ‘elke boodschap of
+                onderwerp, hoe complex of droog ook, kunnen verpakken in een treffende, duidelijke graphic die vlot
+                bekeken wordt en een boeiend verhaal vertelt’, en ‘een eigen grafische stijl vinden waarin ik mijn
+                skills en persoonlijkheid kwijt kan maar die toch heel verkoopbaar en toegankelijk is’,
+                bijvoorbeeld.</p>
+            <p>Van iemand anders kwam een vraag uit mijn voorbereiding: wat als de ideeën van de klant zelf niet goed
+                zijn? Ik heb het zelf al een aantal keer meegemaakt bij videoprojecten, de klant vindt dat een
+                belangrijke figuur uit zijn bedrijf niet lang genoeg in beeld komt in de promofilm bijvoorbeeld, want
+                hebben we van dat interview niet veel meer beeldmateriaal… (bovendien kan je als monteur geen beelden
+                bij toveren). Daar komt veel tact bij kijken, en dat is een skill op zich waar sommige mensen een grote
+                naturel voor hebben. De tip was om dat in stappen aan te pakken, waaronder de optie om opnames van
+                validatieinterviews (met negatieve feedback) rechtstreeks aan de klant te tonen.
+                <span>Wieni</span> daagde ik een beetje uit met de opmerking of er misschien ook introverten bij hen werkten. De
+                aanzet was de uitleg rond standup, waarbij teamleden aan elkaar kort hun projecten voorstellen op
+                wekelijks vastgelegde momenten. Ik ben zeker geen introvert, ik heb zelfs vaak moeite om met introverten
+                samen te werken. Zijn antwoord was dat de meeste ontwerpers in zijn team niets liever doen dan achter
+                hun computer zitten ontwerpen en ontwikkelen, en dat het belangrijk is om daar toch af en toe eens van
+                los te komen. Ik geef hem groot gelijk, want ook als vlotte spreker zit ik zelf vaak in mijn eigen
+                wereldje te werken en ik kan erg schuw worden als ik verantwoording moet afleggen over hoe ik mijn tijd
+                spendeer als ik aan creatieve projecten bezig ben. Ook ik zou als extrovert in deze situaties moeten
+                leren om uit mijn schulp te kruipen, in zekere zin.
+            </p>
+
+            <h3>Solliciteren?</h3>
+            <p>Ik zie voor mezelf niet direct een match bij deze bedrijven. Ik zou er als stagiaire voor een flinke
+                uitdaging staan, want het is een volledig nieuw takenpakket zonder veel raakvlakken met het soort design
+                waarmee ik vertrouwd ben. Ik zou veel geduld met mezelf moeten hebben zodat ik stap voor stap wegwijs
+                kan raken in een nieuwe omgeving. </p>
+            <p>Ik ben op zoek naar iets meer comfort, een plek waar ik sneller taken kan aannemen waar ik mijn weg
+                zelfstandig in kan vinden, dankzij mijn elders opgebouwde ervaring. Van nul beginnen is spannend en als
+                je geluk hebt kan je met wat zelfvertrouwen en oefening snel vorderen in je vaardigheden. Maar het zou
+                voor mij persoonlijk te belastend zijn, in combinatie met een ‘day job’ die ook veel energie kan
+                opslorpen bij momenten.</p>
+
+            <hr>
+
+            <h2>Besluit</h2>
+            <p>Webdesign is een discipline waar ik graag de tanden in zet als dat betekent dat ik mijn favourite skills
+                in de videografie en motion graphics verder kan ontplooien en toepassen in projecten waar ik mee te
+                maken krijg. Dit waren erg interessante sprekers die mij op korte tijd konden overtuigen dat bij hen aan
+                de slag gaan een cadeau is voor iemand die het wil maken als content developer voor digitale (en andere)
+                toepassingen. Ik twijfel eraan of ik in zo’n team zou passen, maar ik wens die kans toe aan mijn collega
+                studenten, onder wie er zeker enthusiaste kandidaten zullen zijn. </p>
+            <p>Het is nog vroeg in de opleiding, daarom waarschijnlijk dat mijn vertrouwen in de meerwaarde van mezelf
+                als ‘gewone’ graduaatsstudent in een team van mensen met een uitgebreide expertise, zoals het door deze
+                bedrijven werd voorgesteld, nog moet aangroeien. Ik moet daarvoor nog uit de cocon komen van mijn
+                ‘hobby’ (zoals ik motion graphics de afgelopen drie jaar heb gezien), en mezelf een beginnende
+                professional in een vak durven noemen.</p>
+
+
+            <!--===========================-->
+            <!--===========================-->
+
+        </div>
+        <!--javascript events voor delen op social media worden in WPL2 toegevoegd-->
+        <div class="social-icons">
+            <a href="https://www.facebook.com">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div class="stats">
+            <div>
+                <p class="small-text">0 </p>
+                <p class="small-text">views</p>
+            </div>
+            <div>
+                <p class="small-text">0 </p>
+                <p class="small-text">comments</p>
+            </div>
+            <div class="empty-space">
+                <!--empty space-->
+            </div>
+            <div class="likes-count">
+                <p class="small-text">0</p>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+    </div>
+    <div class="recent-posts">
+        <h3>Andere opdrachten</h3>
+        <a href="blog.html">
+            <button>Alles bekijken</button>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <a href="#" class="blog-tile">
+                    <div class="blog-cover">
+                        <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+                    </div>
+                    <div class="blog-body">
+                        <div class="tags">
+                            <div>#tag1</div>
+                            <div>#tag2</div>
+                            <div>#tag3</div>
+                        </div>
+                        <div class="tile-author-info">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                            </div>
+                            <div class="tile-author-details">
+                                <p class="smaller-text">Heleen Evers</p>
+                                <p class="smaller-text">3 September 2023 • 5 min</p>
+                            </div>
+                            <div class="empty-space">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h1 class="tile-title">Blog post title</h1>
+                    </div>
+                    <div class="empty-space"></div>
+                    <div class="blog-body">
+                        <div class="text-ellips">
+                            <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                                laboriosam
+                                nisi
+                                odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus
+                                eius,
+                                error
+                                esse, quibusdam rem reprehenderit sed tempore.</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <hr class="orange-line">
+                        <div class="tile-footer">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="likes">
+                                <p>x</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <a href="#" class="blog-tile">
+                    <div class="blog-cover">
+                        <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+                    </div>
+                    <div class="blog-body">
+                        <div class="tags">
+                            <div>#tag1</div>
+                            <div>#tag2</div>
+                            <div>#tag3</div>
+                        </div>
+                        <div class="tile-author-info">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                            </div>
+                            <div class="tile-author-details">
+                                <p class="smaller-text">Heleen Evers</p>
+                                <p class="smaller-text">3 September 2023 • 5 min</p>
+                            </div>
+                            <div class="empty-space">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h1 class="tile-title">Blog post title</h1>
+                    </div>
+                    <div class="empty-space"></div>
+                    <div class="blog-body">
+                        <div class="text-ellips">
+                            <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                                laboriosam
+                                nisi
+                                odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus
+                                eius,
+                                error
+                                esse, quibusdam rem reprehenderit sed tempore.</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <hr class="orange-line">
+                        <div class="tile-footer">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="likes">
+                                <p>x</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <a href="#" class="blog-tile">
+                    <div class="blog-cover">
+                        <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+                    </div>
+                    <div class="blog-body">
+                        <div class="tags">
+                            <div>#tag1</div>
+                            <div>#tag2</div>
+                            <div>#tag3</div>
+                        </div>
+                        <div class="tile-author-info">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                            </div>
+                            <div class="tile-author-details">
+                                <p class="smaller-text">Heleen Evers</p>
+                                <p class="smaller-text">3 September 2023 • 5 min</p>
+                            </div>
+                            <div class="empty-space">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h1 class="tile-title">Blog post title</h1>
+                    </div>
+                    <div class="empty-space"></div>
+                    <div class="blog-body">
+                        <div class="text-ellips">
+                            <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                                laboriosam
+                                nisi
+                                odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus
+                                eius,
+                                error
+                                esse, quibusdam rem reprehenderit sed tempore.</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <hr class="orange-line">
+                        <div class="tile-footer">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="likes">
+                                <p>x</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-xs-12">
+                <a href="#" class="blog-tile">
+                    <div class="blog-cover">
+                        <img src="assets/img/photo-1556761175-b413da4baf72.avif" alt="tile image placeholder">
+                    </div>
+                    <div class="blog-body">
+                        <div class="tags">
+                            <div>#tag1</div>
+                            <div>#tag2</div>
+                            <div>#tag3</div>
+                        </div>
+                        <div class="tile-author-info">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile%20pic%20mask.png" alt="profile picture">
+                            </div>
+                            <div class="tile-author-details">
+                                <p class="smaller-text">Heleen Evers</p>
+                                <p class="smaller-text">3 September 2023 • 5 min</p>
+                            </div>
+                            <div class="empty-space">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h1 class="tile-title">Blog post title</h1>
+                    </div>
+                    <div class="empty-space"></div>
+                    <div class="blog-body">
+                        <div class="text-ellips">
+                            <p class="tile-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi id
+                                laboriosam
+                                nisi
+                                odit repellat, unde? Asperiores consequatur debitis deleniti dicta doloremque doloribus
+                                eius,
+                                error
+                                esse, quibusdam rem reprehenderit sed tempore.</p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <hr class="orange-line">
+                        <div class="tile-footer">
+                            <div class="views">
+                                <i class="fa-regular fa-eye"></i>
+                                <p>x</p>
+                            </div>
+                            <div class="likes">
+                                <p>x</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments">
+        <p>Comments</p>
+        <hr>
+        <div class="comments-box">
+            <p><i class="fa-solid fa-comment-slash fa-xl"></i> Commenting has been turned off.</p>
+        </div>
+    </div>
+
+</main>
+
+<!--==================== FOOTER ====================-->
+
+<footer class="footer">
+    <div class="footer__row footer-buttons">
+        <div class="footer__button">
+            <button class="footer__button__style">All Projects</button>
+        </div>
+        <div class="footer__button">
+            <button class="footer__button__style">Experiments</button>
+        </div>
+    </div>
+    <div class="footer__row footer-icons">
+        <a href="#" class="footer__icon">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-behance"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-vimeo-v"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    <div class="footer__row">
+        <p class="footer__copyright">Created by Heleen Evers</p>
+    </div>
+</footer>
+
+</body>
+</html>
