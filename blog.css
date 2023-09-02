@@ -255,9 +255,7 @@ a:hover {
     margin: 70px 0 40px;
 }
 
-.heading-container-centered {
-    position: relative;
-    margin: 70px 0 40px;
+.centered {
     text-align: center;
 }
 
@@ -374,17 +372,17 @@ h4 {
     margin: 10px 0;
 }
 
-input[type="checkbox"] {
+.checklist input[type="checkbox"] {
     display: none;
 }
 
-label {
+.checklist label {
     position: relative;
     padding-left: 30px;
     pointer-events: none;
 }
 
-label:before {
+.checklist label:before {
     content: "";
     display: inline-block;
     width: 20px;
@@ -396,12 +394,12 @@ label:before {
     top: 1px;
 }
 
-input[type="checkbox"]:checked + label:before {
+.checklist input[type="checkbox"]:checked + label:before {
     background-color: #EC8D32;
     border-color: #181716;
 }
 /*checkmark styling*/
-label:after {
+.checklist label:after {
     content: "";
     display: inline-block;
     width: 5px;
@@ -415,7 +413,7 @@ label:after {
     opacity: 0;
 }
 
-input[type="checkbox"]:checked + label:after {
+.checklist input[type="checkbox"]:checked + label:after {
     opacity: 1;
 }
 /**/
@@ -509,7 +507,7 @@ button {
 
 /* blog tiles */
 
-.blog-tiles-container {
+.container-more-posts {
     margin-bottom: 80px;
 }
 
@@ -624,7 +622,7 @@ h1.tile-title {
 .comments {
     border: 2px solid #181716;
     padding: 50px 180px;
-    margin: 80px auto;
+    margin-bottom: 80px;
 }
 
 .comments-box {
@@ -905,9 +903,6 @@ p span {
         display: none;
     }
 
-    .nav__checkbox:checked + #nav-overlay {
-        right: 0;
-    }
     /*hamburger menu will be functional with added javascript, see WPL 2*/
 
     /*slide out menu*/
@@ -926,6 +921,10 @@ p span {
         flex-direction: column;
         align-items: flex-start;
         padding-left: 120px;
+    }
+
+    .nav__checkbox:checked + #nav-overlay {
+        right: 0;
     }
 
     .menu__list {
@@ -968,22 +967,25 @@ p span {
 
     /*================*/
 
-    nav {
+    /*nav {
         display: none;
+    }*/
+
+    .nav__socialbar {
+        top: 110px;
     }
 
     .main {
         margin: 200px auto 0;
     }
 
+
+    /*---------------------*/
+
     .blog-container,
     .comments {
         padding: 25px 120px 50px;
         border: none;
-    }
-
-    .heading-container {
-        margin: 50px 0 30px;
     }
 
     .recent-posts {
@@ -1050,12 +1052,17 @@ p span {
         padding: 15px 20px 30px;
         border: none;
     }
-    .heading-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 30px 0 20px;
+    .heading-container h1,
+    .centered {
+        display: none;
+    }
+
+    .heading-container .line-small {
+        margin: 0 auto;
+    }
+
+    .more-posts {
+        margin-top: 20px;
     }
 
     .cover-image {
@@ -1085,12 +1092,6 @@ p span {
         padding: 20px 0;
     }
 
-}
-
-@media screen and (min-width: 576px) {
-    .g-0 {
-        display: none;
-    }
 }
 
 /*XS - SMARTPHONE*/
@@ -1128,12 +1129,15 @@ p span {
         width: 100px;
     }
 
-    .g-4 {
-        display: none;
+    .container-more-posts {
+        padding: 0;
+        margin-bottom: 40px;
     }
 
     .blog-tile {
-        border: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
     }
 
     .blog-body {

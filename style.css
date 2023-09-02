@@ -880,34 +880,34 @@ a:hover {
 /* ABOUT */
 /*==========================*/
 
-.section1 .flex-container {
+.section1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
 }
 
-.section1 .column1 {
-    flex: 1;
-    max-width: 30%;
+.section1 .column {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
-.image-container {
+.image-column {
+    flex: .7;
+    margin: 0;
     position: relative;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
+    overflow: hidden;
+    background-image: url(assets/img/profile-pic-large.webp);
+    background-size: auto 100%;
+    background-position: top;
 }
 
 .text-overlay {
     position: absolute;
     top: 0;
-    left: 0;
-    padding: 20px;
+    right: 0;
+    padding: 20px 30px;
     background-color: rgba(0, 0, 0, 0.3);
-    max-width: 100%;
 }
 
 .text-overlay p {
@@ -918,10 +918,12 @@ a:hover {
     width: 100%;
 }
 
-
 .circle-shapes {
-    flex: auto;
-    max-width: 10%;
+    flex: .1;
+}
+
+.section1 .empty-space {
+    flex: .2;
 }
 
 .about-text-column {
@@ -935,6 +937,12 @@ a:hover {
     margin-bottom: 0;
     padding-left: 20px;
 }
+
+.cv-button-container {
+    position: absolute;
+    right: 20px;
+}
+
 
 .article-title span {
     font-family: "Josefin Sans", sans-serif;
@@ -954,7 +962,7 @@ a:hover {
     color: #F7F3EE;
     background-color: #EC8D32;
     padding: 10px 20px;
-    margin: 10px auto;
+    margin: 10px 0;
 }
 
 .article-subtitle span {
@@ -962,18 +970,14 @@ a:hover {
     padding-left: 20px;
 }
 
-.about-me-article p {
-    padding-left: 20px;
+.about-me-article {
+    padding: 0 20px;
+    margin: 40px auto;
 }
 
 .about-me-article p span {
     color: #EC8D32;
 }
-
-.about-me-article {
-    padding-right: 200px;
-}
-
 
 /* DOTS ANIMATION */
 
@@ -1107,28 +1111,16 @@ a:hover {
     justify-content: center;
 }
 
-.section3 .flex-container {
-    max-width: 1800px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    padding: 0 120px;
-}
-
-.section3 .column1,
-.section3 .column3 {
+.section3 .column {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
 }
 
-.section3 .column2 {
-    flex: 0.5;
-    padding-top: 50px;
-}
-
-.diagram {
-    max-width: 120%;
+img.diagram {
+    max-width: 100%;
     height: auto;
 }
 
@@ -1136,8 +1128,8 @@ a:hover {
     background-color: #ACCF97;
 }
 
-.column3 .card-button {
-    width: 400px;
+.column .card-button {
+    width: 100%;
     margin-top: 60px;
 }
 
@@ -1151,6 +1143,7 @@ a:hover {
 
 .video-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1280px;
     width: 100%;
@@ -1161,6 +1154,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
 }
 
 .video-button {
@@ -1184,13 +1178,13 @@ a:hover {
 
 .text-blocks-section {
     display: flex;
-    justify-content: space-between;
-    width: 1080px;
-    margin: 0 auto 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .text-block {
-    width: 300px;
+    width: 25%;
     padding: 40px;
     background-color: #181716;
     display: flex;
@@ -1501,8 +1495,10 @@ h2.portfolio {
     height: 100%;
 }
 
+/*PORTFOLIO AFBEELDINGEN HIER*/
+
 #img-01 {
-    background-image: url('assets/img/endcard-placeholder.png');
+    background-image: url('assets/img/gs-1/Evers_Heleen_Zalando.webp');
 }
 
 #img-02 {
@@ -1541,7 +1537,7 @@ h2.portfolio {
     margin-bottom: 180px;
 }
 
-.column {
+.container-portfolio .column {
     display: flex;
     flex-direction: column;
     margin: 0 32px;
@@ -1581,6 +1577,12 @@ h2.portfolio {
     margin-bottom: 20px;
 }
 
+/*button link*/
+a.portfolio-button {
+    text-decoration: none;
+    color: inherit;
+}
+
 /*==============================*/
 /*==============================*/
 /*======= RESPONSIVITEIT =======*/
@@ -1593,8 +1595,7 @@ h2.portfolio {
     .nav__toggle,
     .nav__overlay,
     .nav__checkbox,
-    .info-box-alt,
-    .section1 .cv-button {
+    .info-box-alt {
         display: none;
     }
 
@@ -1610,9 +1611,10 @@ h2.portfolio {
         align-items: center;
     }
 
+    /*portfolio*/
     .banner-img {
         display: none;
-    }
+    } /**/
 
     .nav__toggle,
     .header__logo {
@@ -1627,12 +1629,13 @@ h2.portfolio {
         display: none;
     }
 
+    /*hamburger menu will be functional with added javascript, see WPL 2*/
+    /*slide out menu*/
+
     .nav__checkbox:checked + #nav-overlay {
         right: 0;
     }
 
-    /*hamburger menu will be functional with added javascript, see WPL 2*/
-    /*slide out menu*/
     .nav__overlay {
         position: fixed;
         top: 0;
@@ -1647,10 +1650,6 @@ h2.portfolio {
         flex-direction: column;
         align-items: flex-start;
         padding-left: 120px;
-    }
-
-    .nav__checkbox:checked + #nav-overlay {
-        right: 0;
     }
 
     .menu__list {
@@ -1692,8 +1691,12 @@ h2.portfolio {
     }
 
     /*================*/
-    nav {
+    /*nav {
         display: none;
+    }*/
+
+    .nav__socialbar {
+        top: 110px;
     }
 
     .main {
@@ -1769,8 +1772,37 @@ h2.portfolio {
     /**/
     /*ABOUT PAGE*/
 
-    .text-overlay {
+    .section1 .image-column,
+    .section1 .circle-shapes,
+    .section1 .empty-space {
         display: none;
+    }
+
+    .about-me-article p {
+        padding: 0 120px;
+    }
+
+    .article-title,
+    .article-subtitle {
+        padding-left: 120px;
+    }
+
+    .section3 {
+        flex-direction: column;
+    }
+
+    img.diagram {
+        max-width: 80%;
+    }
+
+    .text-blocks-section {
+        flex-wrap: wrap;
+        /*flex-direction: column;*/
+        align-items: center;
+    }
+
+    .text-block {
+        width: 80%;
     }
 
 
@@ -1813,6 +1845,10 @@ h2.portfolio {
 
     /**/
     /*ABOUT PAGE*/
+
+    .cv-button-container {
+        display: none;
+    }
 
 
 }
@@ -1871,39 +1907,12 @@ h2.portfolio {
 
     /**/
     /*ABOUT PAGE*/
-    .section1 .container-fluid {
-        flex-direction: column-reverse;
-        align-items: center;
+
+    .cv-button-container {
+        display: none;
     }
 
-    .text-overlay p {
-        text-align: left;
-    }
 
-    .large-image {
-        max-width: none;
-        height: auto;
-    }
-
-    .about-me-article,
-    .article-subtitle,
-    .article-title {
-        margin-bottom: 40px;
-        padding: 0 30px 0 0;
-    }
-
-    .about-me-article p,
-    .about-me-article li {
-        font-size: 18px;
-    }
-
-    .about-me-article ul {
-        padding-left: 20px; /* Adjust padding for bullet points on mobile */
-    }
-
-    .about-me-article .card-button {
-        margin: 20px auto;
-    }
 
 
 }
@@ -1945,6 +1954,12 @@ h2.portfolio {
         width: 80vw;
         margin: 0 auto;
         padding: 0 80px;
+    }
+
+    /*ABOUT PAGE*/
+
+    .article-title span {
+        padding-left: 0;
     }
 
 
