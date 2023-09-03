@@ -64,6 +64,11 @@ h3 {
     margin-bottom: 0;
 }
 
+.lexend span {
+    text-transform: none;
+    font-weight: 400;
+}
+
 .small {
     font-size: 10px;
 }
@@ -98,18 +103,29 @@ h3 {
     text-align: right;
 }
 
+.no-margin {
+    margin-bottom: 0;
+    transform: translateY(25%);
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
 a:hover {
     color: #549F62; /* New hover color */
 }
 
-.logo {
+.banner-flex {
     display: flex;
-    align-items: end;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
     max-width: 60px;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
 }
 
 .heading-container {
@@ -135,11 +151,6 @@ a:hover {
     height: 12px;
     background-color: #EC8D32;
     margin: 0 auto;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
 }
 
 .button {
@@ -175,6 +186,25 @@ a:hover {
 }
 
 /*RESPONSIVITEIT*/
+
+/**/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .orange.right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .year {
+        text-align: right;
+    }
+}
+
+    @media screen and (max-width: 767px) {
+    .orange.right {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .heading-abbr,

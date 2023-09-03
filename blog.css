@@ -562,6 +562,7 @@ h1.tile-title {
     font-size: 20px;
     font-weight: 700;
     margin: 10px 0;
+    min-height: 3rem;
 }
 
 .text-ellips {
@@ -788,11 +789,16 @@ p span {
 }
 
 /* UI model cirkels */
-
+.korthagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .circle-container {
     transform: translateX(50%);
-    margin-top: 160px;
+    /*margin-top: 200px;*/
 }
 
 .circle {
@@ -835,6 +841,59 @@ p span {
     background-color: #F7F3EE;
     width: 50px;
     height: 50px;
+}
+
+.korthagen-list {
+    list-style: none;
+    padding-left: 40px;
+}
+
+.korthagen-list li {
+    position: relative;
+    margin-bottom: 10px;
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 14px;
+}
+
+.korthagen-list li::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #181716;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.korthagen-list .legende-1::before {
+    background-color: #383530;
+}
+
+.korthagen-list .legende-2::before {
+    background-color: #602F00;
+}
+
+.korthagen-list .legende-3::before {
+    background-color: #B7370E;
+}
+
+.korthagen-list .legende-4::before {
+    background-color: #d25c30;
+}
+
+.korthagen-list .legende-5::before {
+    background-color: #EC8D32;
+}
+
+.korthagen-list .legende-6::before {
+    background-color: #ffb763;
+}
+
+.korthagen-list .legende-7::before {
+    background-color: #F7F3EE;
 }
 
 
@@ -1090,6 +1149,10 @@ p span {
     }
     .comments-box {
         padding: 20px 0;
+    }
+
+    .korthagen {
+        display: none;
     }
 
 }

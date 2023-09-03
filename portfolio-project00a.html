@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heleen Evers - Portfolio Project Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Josefin+Slab:wght@700&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@500&display=swap"
+          rel="stylesheet">
+    <!--Bootstrap reset-->
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <!--Bootstrap grid-->
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/7118d8a9c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-css/all.css">
+</head>
+
+<body>
+
+<!--==================== HEADER ====================-->
+
+
+<header class="header__container">
+    <!--for large screens (default)-->
+    <div class="top-banner">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/site/mini%20logo.svg" alt="Logo">
+            </a>
+        </div>
+        <label for="nav-checkbox" class="nav__toggle">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </label>
+        <nav class="nav__items">
+            <a href="portfolio.html" class="header__button">Portfolio</a>
+            <a href="about.html" class="header__button">About</a>
+            <a href="blog.html" class="header__button">Blog</a>
+            <a href="contact.html" class="header__button">Contact</a>
+        </nav>
+        <div class="header__empty-space"></div>
+    </div>
+    <!--for flyout sidebar menu-->
+    <input type="checkbox" id="nav-checkbox" class="nav__checkbox">
+    <div id="nav-overlay" class="nav__overlay">
+        <nav class="menu__items">
+            <ul class="menu__list">
+                <li class="menu__item close-icon">
+                    <label for="nav-checkbox">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </label>
+                </li>
+                <li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--==================== SIDEBAR ====================-->
+
+    <nav>
+        <ul class="nav__socialbar">
+            <li class="nav__socialbar__item">
+                <a href="https://www.youtube.com/@Heleendje/featured"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="https://www.instagram.com/helsteendje/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--==================== SCROLL UP ====================-->
+    <!-- Scroll-up button -->
+    <a href="#" class="nav__socialbar__item scroll-up-button">
+        <i class="fa-solid fa-arrow-up fa-xl"></i>
+    </a>
+
+</header>
+
+<!--==================== MAIN ====================-->
+
+<main class="main">
+
+    <!--==================== PLACEHOLDER ====================-->
+
+    <section class="portfolio-banner">
+        <img src="assets/img/dashboard/Homepage-1.webp" alt="Dashboard Homepage" class="banner-img">
+    </section>
+
+    <section class="grid-section">
+        <!-- Project description -->
+        <div class="container-portfolio">
+            <div class="column description">
+                <h1>Dashboard Project en Portfolio Ontwerp</h1>
+                <h2>Werkplekleren 1 Groepsopdracht</h2>
+                <h3>Dashboard</h3>
+                <p>Dashboards zijn een unieke en krachtige manier om
+                    relevante, bruikbare gegevens te weergeven voor een
+                    bepaalde type taak. Ze maken de meest relevante informatie in een oogopslag begrijpelijk en zijn
+                    gericht op realtime updates.</p>
+                <p>Opdracht: ontwerp een dashboard CV waarmee je jezelf op de markt zet in drie aparte onderdelen die
+                    samen één digitaal geheel (website) vormen:</p>
+                <ul>
+                    <li>Dashboard per persoon (inhoud individueel, opmaak via groepswerk)</li>
+                    <li>Project traject pagina (documentatie en tijdslijn, inhoud door groep)</li>
+                    <li>Portfolio pagina (individueel, zelf alles te kiezen, wireframe voor volgende opdracht)</li>
+                </ul>
+
+                <h3>Portfolio</h3>
+                <p>Zet het visueel design van je portfolio om naar één of meerdere werkende webpagina. Voorzie minstens
+                    volgende inhoud op de portfolio-webpagina:</p>
+                <ul>
+                    <li>Korte voorstelling (Wie ben jij? Wat maakt je anders/speciaal?)</li>
+                    <li>(School)projecten per categorie</li>
+                    <li>Opdrachten Werkplekleren 1</li>
+                    <li>Eindreflectie Werkplekleren 1</li>
+                </ul>
+                <p>Deze opdracht heb ik laten verschuiven naar de tweede zittijd door tijdgebrek. Ik maakte daarvoor een
+                    volledig nieuw design (<a href="portfolio-project00b.html">naar projectpagina</a>).</p>
+            </div>
+            <div class="portfolio-aside">
+                <div class="scope">
+                    <h3>Technieken</h3>
+                    <h4>Adobe XD</h4>
+                    <ul>
+                        <li>UI-design</li>
+                        <li>Wireframe / Wireflow</li>
+                        <li>Libraries</li>
+                    </ul>
+                    <h4>Project Management</h4>
+                    <ul>
+                        <li>Agile workflow</li>
+                        <li>Scrum & weekly standups</li>
+                    </ul>
+                </div>
+                <div class="credit">
+                    <h3>Datum</h3>
+                    <p>11 december 2022 (dashboard)</p>
+                    <p>11 januari 2023 (portfolio)</p>
+                    <h3>Groepsgenoten</h3>
+                    <ul>
+                        <li>Tessa Brzyk</li>
+                        <li>Britney Achten</li>
+                    </ul>
+                    <h3>Links</h3>
+                    <p><a href="https://xd.adobe.com/view/7d33eb68-f959-4a70-a150-1e5c34410f9b-2860/" target="_blank">Link
+                        naar wireflow
+                        (CC)</a></p>
+                    <p>
+                        <a href="https://complete-wolfsbane-a87.notion.site/Daily-stand-up-S-157ec142046f43b0a2d036c77b4900ef?pvs=4"
+                           target="_blank">Link naar daily standups in Notion</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO SUBTITLE -->
+
+        <div class="portfolio-subtitle">
+            <h4>Concept Poster</h4>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-12 portfolio-images">
+                <img src="assets/img/dashboard/dashboard-conceptposter.webp"
+                     alt="Conceptposter voor het dashboard project">
+            </div>
+        </div>
+
+
+        <!-- PORTFOLIO SUBTITLE -->
+
+        <div class="portfolio-subtitle">
+            <h4>Frames</h4>
+        </div>
+
+        <!-- IMAGE GRID -->
+
+        <div class="row g-2">
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Portfolio-HOME.webp" alt="Portfolio ontwerp V01 - frame 2">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Portfolio-ABOUT.webp" alt="Portfolio ontwerp V01 - frame 3">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Wireframe-dashboard-Heleen.webp" alt="Portfolio ontwerp V01 - frame 1">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Heleen-showcase-start-page.webp" alt="Portfolio ontwerp V01 - frame 4">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Heleen-Showcases-GRAPHICS.webp" alt="Portfolio ontwerp V01 - frame 5">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Heleen-Showcases-VIDEO.webp" alt="Portfolio ontwerp V01 - frame 6">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Portfolio-WORK-interests.webp" alt="Portfolio ontwerp V01 - frame 7">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Portfolio-WORK-skills.webp" alt="Portfolio ontwerp V01 - frame 8">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Portfolio-DVO-MAIN.webp" alt="Portfolio ontwerp V01 - frame 9">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/dashboard/Portfolio-WPL-opdrachten-1.webp" alt="Portfolio ontwerp V01 - frame 10">
+            </div>
+        </div>
+
+    </section>
+
+
+</main>
+
+<!--==================== FOOTER ====================-->
+
+<footer class="footer">
+    <div class="footer__row footer-buttons">
+        <div class="footer__button">
+            <button class="footer__button__style">All Projects</button>
+        </div>
+        <div class="footer__button">
+            <button class="footer__button__style">Experiments</button>
+        </div>
+    </div>
+    <div class="footer__row footer-icons">
+        <a href="https://www.youtube.com/@Heleendje/featured" class="footer__icon">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/helsteendje/" class="footer__icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-behance"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-vimeo-v"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    <div class="footer__row">
+        <p class="footer__copyright">Created by Heleen Evers</p>
+    </div>
+</footer>
+
+</body>
+</html>

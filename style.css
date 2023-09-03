@@ -26,6 +26,9 @@ body p.bold {
 }
 
 a {
+    /*font-family: "Lexend Exa", sans-serif;
+    font-size: 14px;
+    font-weight: 500;*/
     color: #EC8D32;
 }
 
@@ -365,42 +368,52 @@ a:hover {
 
 .shape-1 {
     /*background-color: #602F00;*/
-    background-image: url('assets/img/endcard-placeholder.png');
+    background-image: url('assets/img/dashboard/Homepage-1.webp');
 }
 
 .shape-2 {
     background-color: #B7370E;
-    /*background-image: url('path-to-gif/shape2.gif');*/
+    background-image: url('assets/img/xd-design-01.webp');
 }
 
 .shape-3 {
     background-color: #F07357;
-    /*background-image: url('path-to-gif/shape3.gif');*/
+    background-image: url('assets/img/gs-2/Oef3_Composite-berghuis.webp');
 }
 
 .shape-4 {
     background-color: #EC8D32;
-    /*background-image: url('path-to-gif/shape4.gif');*/
+    background-image: url('assets/img/gs-1/EversHeleenDVO-Animation.gif');
 }
 
 .shape-5 {
     background-color: #FFA53F;
-    /*background-image: url('path-to-gif/shape5.gif');*/
+    background-image: url('assets/img/fah/Thursday-Logo_Wave-pop-up-ORANGE_4K.gif');
 }
 
 .shape-6 {
     background-color: #549F62;
-    /*background-image: url('path-to-gif/shape6.gif');*/
+    background-image: url('assets/img/fah/2022-review-card_01.gif');
 }
 
 .shape-7 {
     background-color: #ACCF97;
-    /*background-image: url('path-to-gif/shape7.gif');*/
+    background-image: url('assets/img/fah/Squatters-titles-thumbnail.webp');
 }
 
 .shape-8 {
     background-color: #F7F3EE;
-    /*background-image: url('path-to-gif/shape8.gif');*/
+    background-image: url('assets/img/gs-2/when-allycats-fly.gif');
+}
+
+.shape-9 {
+    background-color: #ACCF97;
+    background-image: url('assets/img/gs-2/Nadine-Day-photography-animation.gif');
+}
+
+.shape-10 {
+    background-color: #F7F3EE;
+    background-image: url('assets/img/ui/ZZUFF-cafe-splash-page-heart1.gif');
 }
 
 .overlay {
@@ -1546,6 +1559,14 @@ h2.portfolio {
 }
 
 /*PORTFOLIO AFBEELDINGEN HIER*/
+
+#img-00a {
+    background-image: url('assets/img/dashboard/Homepage-1.webp');
+}
+
+#img-00b {
+    background-image: url('assets/img/Extravers-logo_burn.jpg');
+}
 
 #img-01 {
     background-image: url('assets/img/gs-1/Evers_Heleen_Zalando.webp');
