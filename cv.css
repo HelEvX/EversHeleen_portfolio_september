@@ -18,12 +18,12 @@ h2 {
 ul.orange-bullets {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 ul.orange-bullets li {
     position: relative;
     padding-left: 30px;
-    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -43,12 +43,29 @@ ul.orange-bullets li::before {
     font-size: 20px;
     font-weight: 400;
     color: #181716;
+    margin-bottom: 0;
+}
+
+.fa-ellipsis {
+    color: #181716;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #181716;
+    margin-bottom: 0;
 }
 
 .lexend {
     font-family: "Lexend Exa", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    margin-bottom: 0;
+}
+
+.small {
+    font-size: 10px;
 }
 
 .lexend.normal {
@@ -72,15 +89,23 @@ ul.orange-bullets li::before {
     font-weight: 700;
 }
 
+.flex-title {
+    display: flex;
+    align-items: end;
+}
+
+.right {
+    text-align: right;
+}
+
 a:hover {
     color: #549F62; /* New hover color */
 }
 
 .logo {
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    margin: 20px auto;
+    align-items: end;
+    justify-content: space-between;
 }
 
 .logo img {
@@ -89,10 +114,10 @@ a:hover {
 
 .heading-container {
     text-align: center;
-    margin-bottom: 40px;
 }
 
-.heading {
+.heading-full,
+.heading-abbr {
     font-family: 'Lexend Exa', sans-serif;
     font-size: 60px;
     color: #181716;
@@ -105,13 +130,25 @@ a:hover {
     margin: 0 auto;
 }
 
+.line-small {
+    width: 120px;
+    height: 12px;
+    background-color: #EC8D32;
+    margin: 0 auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
 .button {
     font-family: 'Lexend Exa', sans-serif;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    width: 240px;
-    margin-top: 10px;
+    text-wrap: avoid;
+    width: 100%;
     color: #181716;
     padding: 10px;
     border: 3px solid #181716;
@@ -135,5 +172,21 @@ a:hover {
 
 .picture {
     background-color: #602F00;
+}
+
+/*RESPONSIVITEIT*/
+
+@media screen and (min-width: 768px) {
+    .heading-abbr,
+    .line-small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heading-full,
+    .line {
+        display: none;
+    }
 }
 

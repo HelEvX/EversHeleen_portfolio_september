@@ -624,6 +624,10 @@ a:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.text-col a {
+    text-decoration: none;
+}
+
 .text-col .card-button,
 .unstyled-button {
     width: 320px;
@@ -1760,7 +1764,17 @@ a.portfolio-button {
     }
 
     .info-box-alt {
-        margin-top: 40px;
+        margin: 40px auto;
+    }
+
+    .picture-col {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-box-alt .card-button {
+        margin: 40px auto 0;
+        width: 100%;
     }
 
     .info-box-alt img {
@@ -1771,18 +1785,6 @@ a.portfolio-button {
     .overlay,
     .gallery-overlay {
         opacity: 1;
-    }
-
-    .gallery-icon i {
-        color: #F7F3EE;
-    }
-
-    .dots-col {
-        flex: 0.5;
-    }
-
-    .column1 {
-        padding-left: 40px;
     }
 
     /**/
@@ -1820,7 +1822,7 @@ a.portfolio-button {
     /*ABOUT PAGE*/
 
     .section1 .image-column,
-    .section1 .circle-shapes,
+    .circle-shapes,
     .section1 .empty-space {
         display: none;
     }
