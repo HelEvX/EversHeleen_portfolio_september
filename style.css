@@ -25,6 +25,10 @@ body p.bold {
     font-weight: 700;
 }
 
+a {
+    color: #EC8D32;
+}
+
 a:hover {
     color: #549F62; /* New hover color */
 }
@@ -804,8 +808,10 @@ a:hover {
 .gallery-icon {
     width: 100%;
     padding: 50%; /*squares*/
-    background-color: #EC8D32;
     border: 1px solid #181716;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -813,12 +819,52 @@ a:hover {
     transition: background-color 0.3s;
 }
 
+#ig-post-01 {
+    background-image: url("assets/img/IG/IG_labullshat.png");
+}
+
+#ig-post-02 {
+    background-image: url("assets/img/IG/IG_ae-endcard-gold.png");
+}
+
+#ig-post-03 {
+    background-image: url("assets/img/IG/IG_ae-glasspig.png");
+}
+
+#ig-post-04 {
+    background-image: url("assets/img/IG/IG_squatters-comic.png");
+}
+
+#ig-post-05 {
+    background-image: url("assets/img/IG/IG_pubg-poster.png");
+}
+
+#ig-post-06 {
+    background-image: url("assets/img/IG/IG_fah-loki.png");
+}
+
+#ig-post-07 {
+    background-image: url("assets/img/IG/IG_ae-endcard.png");
+}
+
+#ig-post-08 {
+    background-image: url("assets/img/IG/IG_mograph.png");
+}
+
+#ig-post-09 {
+    background-image: url("assets/img/IG/IG_watchparty.png");
+}
+
+#ig-post-10 {
+    background-image: url("assets/img/IG/IG_fahlogo.png");
+}
+
 .gallery-icon:hover {
     background-color: rgba(236, 141, 50, 0.8); /* Semi-transparent orange on hover */
 }
 
 .gallery-icon i {
-    color: #181716;
+    color: #F7F3EE;
     position: absolute;
     top: 10%;
     left: 90%;
@@ -869,7 +915,7 @@ a:hover {
 
 .gallery-link {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #FFA53F;
     text-decoration: none;
     margin-top: 10px;
@@ -1502,7 +1548,7 @@ h2.portfolio {
 }
 
 #img-02 {
-    background-image: url('assets/img/grain-gradient-bg.jpg');
+    background-image: url('assets/img/gs-1/EversHeleenDVO-Animation.gif');
 }
 
 .small-scr-img img {
@@ -1513,9 +1559,20 @@ h2.portfolio {
 /* PROJECT PAGES */
 /*==========================*/
 
-.grid-section img {
-    max-width: 100%;
+
+.container-portfolio {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 80px auto 180px;
 }
+
+.portfolio-aside {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
 
 .portfolio-subtitle {
     display: flex;
@@ -1529,26 +1586,11 @@ h2.portfolio {
     font-weight: 600;
 }
 
-.container-portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 80px;
-    margin-bottom: 180px;
-}
-
-.container-portfolio .column {
-    display: flex;
-    flex-direction: column;
-    margin: 0 32px;
-}
-
-.description {
-    width: 430px;
-}
-
-.portfolio-aside {
-    width: 220px;
+.portfolio-aside h4 {
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #EC8D32;
 }
 
 /* h1 style */
@@ -1573,7 +1615,7 @@ h2.portfolio {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -1581,6 +1623,16 @@ h2.portfolio {
 a.portfolio-button {
     text-decoration: none;
     color: inherit;
+}
+
+.portfolio-images {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.grid-section img {
+    max-width: 100%;
 }
 
 /*==============================*/
@@ -1610,11 +1662,6 @@ a.portfolio-button {
         justify-content: center;
         align-items: center;
     }
-
-    /*portfolio*/
-    .banner-img {
-        display: none;
-    } /**/
 
     .nav__toggle,
     .header__logo {
@@ -1805,7 +1852,30 @@ a.portfolio-button {
         width: 80%;
     }
 
+    /**/
+    /*PORTFOLIO PAGES*/
 
+    .container-portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 80px auto 180px;
+    }
+
+    .portfolio-aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-left: 0;
+    }
+
+    .scope,
+    .credit {
+        padding: 0 20px;
+    }
 
 
 }
@@ -1824,24 +1894,11 @@ a.portfolio-button {
         flex-direction: column;
     }
 
-    .container-portfolio {
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
     .portfolio-aside {
-        margin: 32px;
-        display: flex;
-        justify-content: flex-start;
-        gap: 108px;
-        width: 430px;
+        justify-content: start;
     }
 
-    .container-portfolio h3 {
-        margin-top: 20px;
-    }
+
 
     /**/
     /*ABOUT PAGE*/
@@ -1867,6 +1924,8 @@ a.portfolio-button {
         display: none;
     }
 
+    /*PORTFOLIO PAGES*/
+
 }
 
 /*SM - TABLET PORTRAIT*/
@@ -1891,6 +1950,12 @@ a.portfolio-button {
     .custom-row:nth-child(even) {
         text-align: start;
     }
+
+    .portfolio-aside {
+        justify-content: start;
+    }
+
+
 
     /**/
     /*CONTACT PAGE*/
@@ -1922,9 +1987,6 @@ a.portfolio-button {
 
     /**/
     /*PORTFOLIO PROJECT PAGE*/
-    .description {
-        width: 80vw;
-    }
 
 
     /*CONTACT PAGE*/

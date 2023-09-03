@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heleen Evers - Portfolio Project Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Josefin+Slab:wght@700&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@500&display=swap"
+          rel="stylesheet">
+    <!--Bootstrap reset-->
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <!--Bootstrap grid-->
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/7118d8a9c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-css/all.css">
+</head>
+
+<body>
+
+<!--==================== HEADER ====================-->
+
+
+<header class="header__container">
+    <!--for large screens (default)-->
+    <div class="top-banner">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/site/mini%20logo.svg" alt="Logo">
+            </a>
+        </div>
+        <label for="nav-checkbox" class="nav__toggle">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </label>
+        <nav class="nav__items">
+            <a href="portfolio.html" class="header__button">Portfolio</a>
+            <a href="about.html" class="header__button">About</a>
+            <a href="blog.html" class="header__button">Blog</a>
+            <a href="contact.html" class="header__button">Contact</a>
+        </nav>
+        <div class="header__empty-space"></div>
+    </div>
+    <!--for flyout sidebar menu-->
+    <input type="checkbox" id="nav-checkbox" class="nav__checkbox">
+    <div id="nav-overlay" class="nav__overlay">
+        <nav class="menu__items">
+            <ul class="menu__list">
+                <li class="menu__item close-icon">
+                    <label for="nav-checkbox">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </label>
+                </li>
+                <li class="menu__item"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
+                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--==================== SIDEBAR ====================-->
+
+    <nav>
+        <ul class="nav__socialbar">
+            <li class="nav__socialbar__item">
+                <a href="https://www.youtube.com/@Heleendje/featured"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="https://www.instagram.com/helsteendje/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav__socialbar__item">
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--==================== SCROLL UP ====================-->
+    <!-- Scroll-up button -->
+    <a href="#" class="nav__socialbar__item scroll-up-button">
+        <i class="fa-solid fa-arrow-up fa-xl"></i>
+    </a>
+
+</header>
+
+<!--==================== MAIN ====================-->
+
+<main class="main">
+
+    <!--==================== PLACEHOLDER ====================-->
+
+    <section class="portfolio-banner">
+        <img src="assets/img/gs-1/EversHeleenDVO-Animation.gif" alt="vector animatie" class="banner-img">
+    </section>
+
+    <section class="grid-section">
+        <!-- Project description -->
+        <div class="container-portfolio">
+            <div class="column description">
+                <h1>Vector Animatie</h1>
+                <h2>Graphic Skills 1 PE Illustrator</h2>
+                <p>Opdrachtbeschrijving: Teken de
+                    bovenstaande afbeelding zo goed mogelijk over. Gebruik de
+                    kleuren die [in de opdracht] vermeld worden.</p>
+                <p>Nota: de animatie was geen onderdeel van de opdracht, deze heb ik voor mijn eigen plezier gemaakt en
+                    ingeleverd omdat ik veronderstelde dat de docent dit wel interessant zou vinden. Enkel het
+                    startframe (met gele achtergrond) was onderdeel van de eigenlijke opdracht, de overgangen en het
+                    eindbeeld (met 'night sky') heb ik zelf gemaakt.</p>
+                <p>Voor de animatie in After Effects gebruikte ik een relatief eenvoudige parallax setup met 3D
+                    layers en een single node camera.</p>
+                <p>De full resolution versie kan je bekijken op <a href="https://www.instagram.com/p/CmzAPPgoVgh/" target="_blank">Instagram</a>!</p>
+            </div>
+            <div class="portfolio-aside">
+                <div class="scope">
+                    <h3>Technieken</h3>
+                    <h4>Illustrator</h4>
+                    <ul>
+                        <li>Paths/pen tool</li>
+                        <li>Color Swatches</li>
+                        <li>Libraries</li>
+                        <li>Clipping Masks</li>
+                        <li>Eyedropper tool</li>
+                        <li>Shapes tool</li>
+                    </ul>
+                </div>
+                <div class="credit">
+                    <h3>Datum</h3>
+                    <p>8 januari 2023</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PORTFOLIO SUBTITLE -->
+
+        <div class="portfolio-subtitle">
+            <h4>WIP</h4>
+        </div>
+
+        <!-- IMAGE GRID -->
+
+        <div class="row g-2">
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/gs-1/gs-1-vector-illustratorwip.webp" alt="Vector opdracht: Illustrator project">
+            </div>
+            <div class="col-lg-6 col-md-12 portfolio-images">
+                <img src="assets/img/gs-1/gs-1-vectoranimatie.webp" alt="Vector opdracht: After Effects project">
+            </div>
+        </div>
+
+    </section>
+
+
+</main>
+
+<!--==================== FOOTER ====================-->
+
+<footer class="footer">
+    <div class="footer__row footer-buttons">
+        <div class="footer__button">
+            <button class="footer__button__style">All Projects</button>
+        </div>
+        <div class="footer__button">
+            <button class="footer__button__style">Experiments</button>
+        </div>
+    </div>
+    <div class="footer__row footer-icons">
+        <a href="https://www.youtube.com/@Heleendje/featured" class="footer__icon">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/helsteendje/" class="footer__icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-behance"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-vimeo-v"></i>
+        </a>
+        <a href="#" class="footer__icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    <div class="footer__row">
+        <p class="footer__copyright">Created by Heleen Evers</p>
+    </div>
+</footer>
+
+</body>
+</html>
