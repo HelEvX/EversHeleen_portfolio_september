@@ -1412,9 +1412,11 @@ aside .cv-button {
 }
 
 .contact-form {
-    width: 100%;
+    position: relative;
+    display: flex;
+    /*justify-content: center;*/
     max-width: 810px;
-    margin: 80px auto;
+    /*margin: 0 auto;*/
 }
 
 .custom-form {
@@ -1424,14 +1426,14 @@ aside .cv-button {
 .form-data {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     background-color: #FFFEFE;
     padding: 10px;
+    margin-left: 80px;
 }
 
 .form-id {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -1443,7 +1445,7 @@ label[for="message"] {
 
 #name, #email, #message {
     background-color: #F7F3EE;
-    border: 4px solid #181716;
+    border: 3px solid #181716;
     padding: 5px;
     margin: 5px 0;
 }
@@ -1466,13 +1468,18 @@ label[for="message"] {
 .form-button {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+}
+
+
+.form-background-shape {
+    /*margin: 0 auto;*/
 }
 
 .form-background-shape img {
-    width: 100%;
-    height: 80%;
-    transform: translate(5%, 5%);
+    margin-left: 90px;
+    width: 95%;
+    height: 82%;
+    /*transform: translate(10%, 5%);*/
 }
 
 /*==========================*/
@@ -1666,6 +1673,13 @@ a.portfolio-button {
 /*==============================*/
 /*==============================*/
 
+/*XXL*/
+@media screen and (max-width: 1399px) {
+    .petri-col {
+        display: none;
+    }
+}
+
 /*XL - DESKTOP & LAPTOP*/
 /*default*/
 @media screen and (min-width: 1200px) {
@@ -1829,7 +1843,7 @@ a.portfolio-button {
         justify-content: space-evenly;
         width: 100%;
         padding: 0 40px;
-        margin-top: 40px;
+        /*margin-top: 40px;*/
     }
 
     .h4-line {
@@ -1927,6 +1941,22 @@ a.portfolio-button {
         display: none;
     }
 
+    /**/
+    /*CONTACT PAGE*/
+
+    .form-background-shape {
+        visibility: hidden;
+    }
+
+    /*.contact-form {
+        position: revert;
+    }*/
+
+    .form-data {
+        margin-left: 0;
+        padding: 40px;
+    }
+
 
 }
 
@@ -1943,8 +1973,6 @@ a.portfolio-button {
     .article-subtitle br {
         display: none;
     }
-
-    /*PORTFOLIO PAGES*/
 
 }
 
@@ -2025,11 +2053,33 @@ a.portfolio-button {
         display: flex;
         flex-direction: column;
         width: 60%;
-        margin: 40px auto;
+        margin: 120px auto;
     }
 
     .dots-col {
         display: none;
+    }
+
+    .form-data {
+        margin-left: 0;
+        padding: 40px;
+    }
+
+    .form-background-shape {
+        visibility: hidden;
+    }
+
+    .contact-text {
+        margin: 80px 0;
+    }
+
+    .form-id {
+        flex-direction: column;
+        gap: normal;
+    }
+
+    .unstyled-button {
+        margin-top: 0;
     }
 
     /**/
