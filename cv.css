@@ -276,7 +276,7 @@ ul.white-bullets li::before {
     }
 }
 
-    @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .orange.right {
         display: none;
     }
